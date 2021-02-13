@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Card, Image, Row, Col, Typography, Rate, Tooltip } from 'antd';
+import './activityItem.css';
+import { Card, Image, Row, Col, Typography, Rate, Tooltip, Badge } from 'antd';
 import {
   HeartOutlined,
   HeartFilled,
@@ -8,30 +9,23 @@ import {
 
 const { Title } = Typography;
 
-export default function ActivitiesItem({
-  imgsrc,
-  activityName,
-  rating,
-  cityName,
-  price,
-  tags,
-}) {
+export default function ActivitiesItem(activity) {
   const [like, setLike] = useState(false);
   const toggleLike = () => {
     setLike(!like);
   };
 
   return (
-    <Card style={{ height: 200, width: 600 }}>
+    <Card className="cardSize" hoverable>
       <Row>
         <Col span={10}>
-          <Image src={imgsrc} width={200} height={150} />
+          <Image src={activity.imgsrc} width={200} height={150} />
         </Col>
 
         <Col span={14}>
           <Row>
             <Col span={21}>
-              <Title level={3}>{activityName}</Title>
+              <Title level={3}>{activity.name}</Title>
             </Col>
             <Col span={3}>
               <Tooltip
@@ -40,12 +34,12 @@ export default function ActivitiesItem({
               >
                 {like ? (
                   <HeartOutlined
-                    style={{ fontSize: '30px', color: '#c4d0b8' }}
+                    className="heartOutlined heartSize"
                     onClick={toggleLike}
                   />
                 ) : (
                   <HeartFilled
-                    style={{ fontSize: '30px', color: 'red' }}
+                    className="heartFilled heartSize"
                     onClick={toggleLike}
                   />
                 )}
@@ -53,23 +47,28 @@ export default function ActivitiesItem({
             </Col>
           </Row>
 
-          <Row style={{ height: 70 }}>
+          <Row className="middle-row-height">
             <Col span={19}>
-              {cityName}
+              {activity.cityName}
               <br />
-              <Rate disabled defaultValue={rating} />
+              <Rate disabled defaultValue={activity.rating} />
             </Col>
             <Col span={5}>
-              <Title level={3}>{price}</Title>
+              <Title level={3}>{activity.price}</Title>
             </Col>
           </Row>
 
           <hr />
 
           <Row justify="space-around">
-            {tags.map((tag) => (
-              <span>{tag}</span>
-            ))}
+            {activity.tags.length < 5
+              ? activity.tags.map((tag) => <span>{tag}</span>)
+              : activity.tags.slice(0, 4).map((tag) => <span>{tag}</span>)}{' '}
+            <Badge
+              overflowCount={10}
+              style={{ backgroundColor: '#108ee9' }}
+              count={activity.tags.length - 4}
+            />
             <span>
               learn more <DoubleRightOutlined />
             </span>

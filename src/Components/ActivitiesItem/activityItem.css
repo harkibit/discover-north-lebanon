@@ -1,0 +1,19 @@
+.cardSize {
+  height: 200px;
+  width: 600px;
+}
+.heartSize {
+  font-size: 30px;
+}
+.heartOutlined {
+  color: #c4d0b8;
+}
+.heartFilled {
+  color: red;
+}
+.middle-row-height {
+  height: 70;
+}
+.bdge-color {
+  background-color: #52c41a;
+}
