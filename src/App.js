@@ -1,24 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
 import 'antd/dist/antd.css';
+import CityItem from './Components/CityItem/CityItem';
 
 function App() {
+  const info =
+    'this is the best thing you will ever have in your life baby if you thought about it this is really cool huh?';
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CityItem name="saida" info={info} />
     </div>
   );
 }
