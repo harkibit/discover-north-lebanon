@@ -1,0 +1,11 @@
+.items {
+  text-align: center;
+  font-size: 18px;
+}
+.dropButton {
+  font-size: 18px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
