@@ -1,0 +1,15 @@
+.card {
+  width: 380px;
+  height: 417px;
+  margin: auto;
+  border: 1px solid rgba(0, 145, 234, 0.3);
+  border-radius: 5px;
+}
+.card img {
+  width: 380px;
+  height: 351px;
+}
+.meta {
+  text-align: center;
+  font-size: 18px;
+}
