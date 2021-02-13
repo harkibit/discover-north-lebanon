@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'antd';
 import './Button.css';
-export default function ButtonComponont({ text, type, onClick }) {
+export default function Button({ text, type, onClick }) {
   return (
     <div>
       <Button className="button" type={type} shape="round" onClick={onClick}>
