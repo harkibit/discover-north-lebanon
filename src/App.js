@@ -1,4 +1,3 @@
-import './App.css';
 import 'antd/dist/antd.css';
 import ButtonComponent from './Components/./Button/Button';
 import FooterComponent from './Components/Footer/Footer';
