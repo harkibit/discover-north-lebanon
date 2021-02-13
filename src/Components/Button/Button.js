@@ -1,25 +1,10 @@
 import React from 'react';
 import { Button } from 'antd';
-
-export default function ButtonComponont({
-  text,
-  type,
-  textSize,
-  functionality,
-}) {
-  const btnstylee = {
-    fontSize: textSize,
-    height: 'auto',
-  };
-
+import './Button.css';
+export default function ButtonComponont({ text, type, onClick }) {
   return (
     <div>
-      <Button
-        style={btnstylee}
-        type={type}
-        shape="round"
-        onClick={functionality}
-      >
+      <Button className="button" type={type} shape="round" onClick={onClick}>
         {text}
       </Button>
     </div>
