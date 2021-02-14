@@ -27,11 +27,10 @@ export default function FooterComponent() {
           </Row>
           <br />
           <Row>
-            <Col span={2} />
+            <Col span={1} />
             <Col span={20} className="alignmentRow2">
               <Text className="textColor">
-                {' '}
-                Copyright © WeDot Wireframe Kit. All rights reserved
+                COPYRIGHT © DISCOVER THE NORTH ALL RIGHTS RESERVED
               </Text>
             </Col>
           </Row>
