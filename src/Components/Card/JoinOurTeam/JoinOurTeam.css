@@ -1,0 +1,36 @@
+.card {
+  padding: 0;
+  width: 1205px;
+  height: 499px;
+  margin: auto;
+  border: none;
+}
+.cardbody img {
+  width: 523px;
+  height: 498px;
+}
+.cardbody {
+  display: flex;
+}
+.info {
+  margin-top: 0;
+  margin-left: 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.title {
+  font-size: 48px;
+  text-align: left;
+}
+.description {
+  font-size: 20px;
+  word-wrap: wrap;
+  text-align: left;
+}
+.cardfooter {
+  margin-top: 1rem;
+  font-size: 18px;
+}
