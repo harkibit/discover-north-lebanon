@@ -6,17 +6,17 @@ import './Search.css';
 export default function Search({ citiesArray, activitiesArray, handleSearch }) {
   const [citySearch, setCitySearch] = useState(undefined);
   const [activitySearch, setActivitySearch] = useState('');
-  const [val1, setVal1] = useState('Search for a city');
-  const [val2, setVal2] = useState('Search for an activity');
+  const [cityVal, setCityVal] = useState('Search for a city');
+  const [activityVal, setActivityVal] = useState('Search for an activity');
   const { Option } = Select;
 
   function handleChangeCity(value) {
     setCitySearch(value);
-    setVal1(value);
+    setCityVal(value);
   }
   function handleChangeAct(value) {
     setActivitySearch(value);
-    setVal2(value);
+    setActivityVal(value);
   }
   function onSearch(val) {
     citiesArray.forEach((city) => {
@@ -28,8 +28,8 @@ export default function Search({ citiesArray, activitiesArray, handleSearch }) {
     handleSearch(citySearch, activitySearch);
     setCitySearch(undefined);
     setActivitySearch('');
-    setVal1('Search for a city');
-    setVal2('Search for an activity');
+    setCityVal('Search for a city');
+    setActivityVal('Search for an activity');
     e.target.reset();
   }
 
@@ -38,7 +38,7 @@ export default function Search({ citiesArray, activitiesArray, handleSearch }) {
       <form className="search-box" onSubmit={handleSubmit}>
         <Select
           className="selectBox"
-          value={val1}
+          value={cityVal}
           showSearch
           onSearch={onSearch}
           style={{ width: '50%' }}
@@ -55,7 +55,7 @@ export default function Search({ citiesArray, activitiesArray, handleSearch }) {
         </Select>
         <Select
           className="selectBox"
-          value={val2}
+          value={activityVal}
           showSearch
           style={{ width: '50%' }}
           allowClear="true"
