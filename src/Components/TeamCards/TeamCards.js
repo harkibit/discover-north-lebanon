@@ -7,12 +7,12 @@ import {
   GithubOutlined,
 } from '@ant-design/icons';
 
-const AboutCard = (props) => {
+const TeamCard = ({ imgsrc, name, specialization }) => {
   return (
     <Card
       hoverable
       className="cardSize"
-      cover={<img src={props.imgsrc} />}
+      cover={<img src={imgsrc} />}
       actions={[
         <GithubOutlined key="github" />,
         <LinkedinOutlined key="linkedin" />,
@@ -20,10 +20,10 @@ const AboutCard = (props) => {
       ]}
     >
       <div className="centeredItem">
-        <h2>{props.name}</h2>
-        <span className="spec">{props.specialization}</span>
+        <h2>{name}</h2>
+        <span className="spec">{specialization}</span>
       </div>
     </Card>
   );
 };
-export default AboutCard;
+export default TeamCard;
