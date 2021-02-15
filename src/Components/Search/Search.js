@@ -3,65 +3,82 @@ import { SearchOutlined } from '@ant-design/icons';
 import { Select } from 'antd';
 import './Search.css';
 
-export default function Search({ citiesArray, activitiesArray }) {
-  const [citySearch, setCitySearch] = useState([]);
-  const [activitySearch, setActivitySearch] = useState([]);
+export default function Search({ citiesArray, activitiesArray, handleSearch }) {
+  const [citySearch, setCitySearch] = useState(undefined);
+  const [activitySearch, setActivitySearch] = useState('');
+  const [val1, setVal1] = useState('Search for a city');
+  const [val2, setVal2] = useState('Search for an activity');
   const { Option } = Select;
 
   function handleChangeCity(value) {
     setCitySearch(value);
+    setVal1(value);
   }
   function handleChangeAct(value) {
     setActivitySearch(value);
+    setVal2(value);
   }
-  function handleSearch(citySearch, activitySearch) {
-    const cityResult = [];
-    for (let j = 0; j < citySearch.length; j++) {
-      for (let i = 0; i < citiesArray.length; i++) {
-        if (citiesArray[i].name === citySearch[j])
-          cityResult.push(citiesArray[i]);
-      }
-    }
-    const actResult = [];
-    for (let j = 0; j < activitySearch.length; j++) {
-      for (let i = 0; i < activitiesArray.length; i++) {
-        if (activitiesArray[i].name === activitySearch[j])
-          actResult.push(activitiesArray[i]);
-      }
-    }
+  function onSearch(val) {
+    citiesArray.forEach((city) => {
+      if (val === city) setCitySearch(val);
+    });
   }
   function handleSubmit(e) {
     e.preventDefault();
     handleSearch(citySearch, activitySearch);
+    setCitySearch(undefined);
+    setActivitySearch('');
+    setVal1('Search for a city');
+    setVal2('Search for an activity');
+    e.target.reset();
   }
 
   return (
     <div>
-      <form className="search-box" onSubmit={handleSubmit} id="newForm">
-        <div className="search-inputs">
-          <Select
-            className="selectBox"
-            mode="tags"
-            style={{ width: '50%' }}
-            placeholder="Search for a city"
-            onChange={handleChangeCity}
-          >
-            {citiesArray.map((city, index) => {
-              return <Option key={city.name}>{city.name}</Option>;
-            })}
-          </Select>
-          <Select
-            className="selectBox"
-            mode="tags"
-            style={{ width: '50%' }}
-            placeholder="Search for an activity"
-            onChange={handleChangeAct}
-          >
-            {activitiesArray.map((act, index) => {
-              return <Option key={act.name}>{act.name}</Option>;
-            })}
-          </Select>
-        </div>
+      <form className="search-box" onSubmit={handleSubmit}>
+        <Select
+          className="selectBox"
+          value={val1}
+          showSearch
+          onSearch={onSearch}
+          style={{ width: '50%' }}
+          allowClear="true"
+          onChange={handleChangeCity}
+        >
+          {citiesArray.map((city) => {
+            return (
+              <Option key={city.id} value={city.name}>
+                {city.name}
+              </Option>
+            );
+          })}
+        </Select>
+        <Select
+          className="selectBox"
+          value={val2}
+          showSearch
+          style={{ width: '50%' }}
+          allowClear="true"
+          onChange={handleChangeAct}
+        >
+          {citySearch === undefined
+            ? activitiesArray.map((act) => {
+                return (
+                  <Option key={act.id} value={act.name}>
+                    {act.name}
+                  </Option>
+                );
+              })
+            : activitiesArray
+                .filter((act) => act.city === citySearch)
+                .map((act) => {
+                  return (
+                    <Option key={act.id} value={act.name}>
+                      {act.name}
+                    </Option>
+                  );
+                })}
+        </Select>
         <button className="search-btn">
           <SearchOutlined
             style={{ fontSize: '20px', color: 'white' }}

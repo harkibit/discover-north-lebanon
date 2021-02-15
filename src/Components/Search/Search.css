@@ -10,9 +10,11 @@
   border: 1px solid white 0.6;
   border-radius: 50px;
   background-color: transparent;
-  color: black;
+  color: white;
 }
-
+.search-btn:hover {
+  box-shadow: 1px 1px 1px 1px rgb(249, 249, 249);
+}
 button {
   border-color: transparent;
   background-color: transparent;
