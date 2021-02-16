@@ -4,7 +4,7 @@ import './Button.css';
 export default function ButtonComponent({ text, type, onClick }) {
   return (
     <div>
-      <Button className="button" type={type} shape="round" onClick={onClick}>
+      <Button className="button" type={type} onClick={onClick}>
         {text}
       </Button>
     </div>
