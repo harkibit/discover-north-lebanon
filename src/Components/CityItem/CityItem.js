@@ -4,13 +4,18 @@ import { Card, Image, Row, Col, Typography } from 'antd';
 import { FireOutlined, DoubleRightOutlined } from '@ant-design/icons';
 const { Title } = Typography;
 
-export default function CityItem(city) {
+export default function CityItem({ city }) {
   return (
     <div>
       <Card className="card-size">
         <Row>
           <Col span={10}>
-            <Image src={city.imgsrc} width={200} height={150} />
+            <Image
+              src={city.imgsrc}
+              alt={'city photo'}
+              width={200}
+              height={150}
+            />
           </Col>
 
           <Col span={14}>
@@ -19,13 +24,13 @@ export default function CityItem(city) {
             </Row>
 
             <Row className="row-height">
-              {city.info.split(' ').length < 20 ? (
-                city.info
+              {city.description.split(' ').length < 20 ? (
+                city.description
               ) : (
                 <span>
                   {' '}
-                  {city.info.split(' ').slice(0, 20).join(' ')}{' '}
-                  <a href="#" className="seeMore">
+                  {city.description.split(' ').slice(0, 20).join(' ')}{' '}
+                  <a href="www.google.com" className="seeMore">
                     See more
                   </a>
                 </span>
