@@ -3,6 +3,7 @@ import { Card } from 'antd';
 const { Meta } = Card;
 
 const ActivityCard = ({ activity, col }) => {
+  const imageHeight = parseInt(activity.height);
   return (
     <Card
       className={`card col${col}`}
@@ -17,7 +18,7 @@ const ActivityCard = ({ activity, col }) => {
         className="cardbody"
         title={activity.name}
         width={activity.width}
-        height={parseInt(activity.height) / 1.27}
+        height={imageHeight < 500 ? imageHeight / 1.27 : imageHeight / 1.1}
       />
     </Card>
   );
