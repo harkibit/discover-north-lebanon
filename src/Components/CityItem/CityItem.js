@@ -30,7 +30,7 @@ export default function CityItem({ city }) {
                 <span>
                   {' '}
                   {city.description.split(' ').slice(0, 20).join(' ')}{' '}
-                  <a href="www.google.com" className="seeMore">
+                  <a href="#" className="seeMore">
                     See more
                   </a>
                 </span>
