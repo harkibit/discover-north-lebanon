@@ -1,0 +1,56 @@
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+  color: unset;
+  font-size: unset;
+  background: rgb(0, 0, 0, 0.4);
+  color: white;
+  height: 20px;
+  width: 50px;
+}
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover,
+.ant-carousel .slick-prev:focus,
+.ant-carousel .slick-next:focus {
+  color: unset;
+}
+.slick-list {
+  width: 400px;
+}
+.ant-carousel {
+  width: 400px;
+}
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+  background: rgb(0, 0, 0, 0.4);
+  z-index: 1;
+  position: absolute;
+}
+.slick-slider .slick-initialized {
+  width: 300px;
+}
+.ant-carousel .slick-prev {
+  position: absolute;
+  left: 0px;
+}
+.ant-carousel .slick-next {
+  position: absolute;
+  right: 0px;
+}
+.anticon svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+.act-nb {
+  border-radius: 10px;
+  width: 110px;
+  padding: 5px;
+  color: white;
+  position: relative;
+  z-index: 2;
+  bottom: 40px;
+  font-size: small;
+  opacity: 0.5;
+}
