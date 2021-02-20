@@ -1,3 +1,6 @@
+:root {
+  --width: 400px;
+}
 .ant-carousel .slick-prev,
 .ant-carousel .slick-next {
   color: unset;
@@ -13,11 +16,9 @@
 .ant-carousel .slick-next:focus {
   color: unset;
 }
-.slick-list {
-  width: 400px;
-}
+.slick-list,
 .ant-carousel {
-  width: 400px;
+  width: var(--width);
 }
 .ant-carousel .slick-prev,
 .ant-carousel .slick-next {
@@ -28,29 +29,16 @@
   z-index: 1;
   position: absolute;
 }
-.slick-slider .slick-initialized {
-  width: 300px;
-}
 .ant-carousel .slick-prev {
-  position: absolute;
   left: 0px;
 }
 .ant-carousel .slick-next {
-  position: absolute;
   right: 0px;
 }
 .anticon svg {
   width: 1.5em;
   height: 1.5em;
 }
-.act-nb {
-  border-radius: 10px;
-  width: 110px;
-  padding: 5px;
-  color: white;
-  position: relative;
-  z-index: 2;
-  bottom: 40px;
-  font-size: small;
-  opacity: 0.5;
+.slick-slider .slick-initialized {
+  width: var(--width);
 }

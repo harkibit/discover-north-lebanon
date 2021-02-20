@@ -1,9 +1,11 @@
 import React from 'react';
 import { Carousel, Image } from 'antd';
-import { LeftOutlined, RightOutlined, CameraOutlined } from '@ant-design/icons';
+import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import './ActivitiesCarousel.css';
 
-export default function ActivitiesCarousel({ actPicArray }) {
+export default function ActivitiesCarousel({ actPicArray, carWidth }) {
+  const bodyStyles = document.body.style;
+  bodyStyles.setProperty('--width', carWidth);
   return (
     <div className="carousel-act">
       <Carousel
@@ -13,13 +15,10 @@ export default function ActivitiesCarousel({ actPicArray }) {
       >
         {actPicArray.map((pic, index) => (
           <div className="carousel-item" key={index}>
-            <Image width={400} src={pic.imgsrc} />
+            <Image src={pic.imgsrc} />
           </div>
         ))}
       </Carousel>
-      <div className="act-nb">
-        <CameraOutlined /> All Photos ({actPicArray.length})
-      </div>
     </div>
   );
 }
