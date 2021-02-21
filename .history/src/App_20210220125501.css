@@ -1,0 +1,4 @@
+.App {
+  display: grid;
+  grid-template: 1fr 1fr/ 300px 300px 300px;
+}

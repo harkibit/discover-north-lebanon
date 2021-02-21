@@ -3,12 +3,9 @@
   height: 10%;
   display: flex;
 }
-.rowheight {
-  height: 100%;
-}
 .imgProp {
   height: 100%;
-  width: 100%;
+  width: 80%;
 }
 .col-align {
   display: flex;
@@ -36,5 +33,5 @@
 }
 .description {
   margin-top: 5px;
-  width: 100%;
+  width: 1000px;
 }

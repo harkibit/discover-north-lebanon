@@ -10,7 +10,7 @@ function TourGuideCard({ tourGuide }) {
       className="cardSize"
       cover={<img className="imgProp" src={tourGuide.imgsrc} />}
     >
-      <Row className="rowheight">
+      <Row>
         <Col span={20}>
           <Row>
             <h1>{tourGuide.name}</h1>

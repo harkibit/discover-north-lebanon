@@ -1,19 +1,17 @@
 .cardSize {
+  margin: 100px;
   width: 87%;
   height: 10%;
   display: flex;
 }
-.rowheight {
-  height: 100%;
-}
 .imgProp {
-  height: 100%;
-  width: 100%;
+  height: 200px;
+  width: 241.65px;
 }
 .col-align {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 150px;
   justify-content: space-between;
 }
 .icon-size {
@@ -28,13 +26,13 @@
 }
 .skeleton {
   margin-top: 7px;
-  width: 50%;
+  width: 20%;
 }
 .skeleton-small {
   margin-top: 5px;
-  width: 80%;
+  width: 700px;
 }
 .description {
   margin-top: 5px;
-  width: 100%;
+  width: 1000px;
 }

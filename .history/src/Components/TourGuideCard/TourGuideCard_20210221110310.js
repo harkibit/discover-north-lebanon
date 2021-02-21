@@ -4,25 +4,25 @@ import Button from '../Button/Button';
 import { Card, Row, Col, Tooltip, Tag, Skeleton } from 'antd';
 import { EllipsisOutlined } from '@ant-design/icons';
 
-function TourGuideCard({ tourGuide }) {
+function TourGuideCard({ props }) {
   return (
     <Card
       className="cardSize"
-      cover={<img className="imgProp" src={tourGuide.imgsrc} />}
+      cover={<img className="imgProp" src={props.imgsrc} />}
     >
-      <Row className="rowheight">
+      <Row>
         <Col span={20}>
           <Row>
-            <h1>{tourGuide.name}</h1>
+            <h1>{props.name}</h1>
           </Row>
           <div>
             Speciality : &nbsp;
-            {tourGuide.tags &&
-              tourGuide.tags.map((tag) => <Tag color="magenta">{tag}</Tag>)}
+            {props.tags &&
+              props.tags.map((tag) => <Tag color="magenta">{tag}</Tag>)}
           </div>
 
           <Row justify="center" className="description">
-            {!tourGuide.description ? (
+            {!props.description ? (
               <div className="skeleton-container">
                 <Skeleton.Input active size="small" className="skeleton" />
                 <Skeleton.Input
@@ -31,11 +31,11 @@ function TourGuideCard({ tourGuide }) {
                   className="skeleton-small"
                 />
               </div>
-            ) : tourGuide.description.split(' ').length < 55 ? (
-              tourGuide.description
+            ) : props.description.split(' ').length < 55 ? (
+              props.description
             ) : (
               <span>
-                {tourGuide.description.split(' ').slice(0, 55).join(' ')}
+                {props.description.split(' ').slice(0, 55).join(' ')}
                 <a href="#" className="see-more">
                   {' '}
                   See more ..

@@ -1,14 +1,12 @@
 .cardSize {
+  margin: 100px;
   width: 87%;
-  height: 10%;
+  height: 20%;
   display: flex;
-}
-.rowheight {
-  height: 100%;
 }
 .imgProp {
   height: 100%;
-  width: 100%;
+  width: 90%;
 }
 .col-align {
   display: flex;
@@ -36,5 +34,5 @@
 }
 .description {
   margin-top: 5px;
-  width: 100%;
+  width: 1000px;
 }
