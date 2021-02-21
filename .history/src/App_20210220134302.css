@@ -1,9 +1,0 @@
-body {
-  display: flex;
-}
-.App {
-  justify-self: center;
-  display: grid;
-  grid-gap: 10px;
-  grid-template: 1fr 1fr/ 300px 300px 300px;
-}
