@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.part {
+  display: flex;
+  margin: 0 50px;
+  width: 400px;
+}
+
+h2 {
+  color: #091945;
+}
+
+p {
+  color: rgba(69, 90, 100, 0.8);
+}
