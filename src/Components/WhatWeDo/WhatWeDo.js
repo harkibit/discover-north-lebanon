@@ -1,45 +1,45 @@
 import React from 'react';
 import './WhatWeDo.css';
-import icon1 from './icons/icon1.png';
-import icon2 from './icons/icon2.png';
-import icon3 from './icons/icon3.png';
+import activity from './icons/activity.png';
+import cities from './icons/cities.png';
+import tourGuide from './icons/tourGuide.png';
 
 export default function WhatWeDo(props) {
-  const title1 = '+ activities',
-    desc1 = 'Enjoy a variety of activities throughout the north!';
-  const title2 = 'Explore Cities',
-    desc2 = 'Every City has its own stuff, get to know them more with us';
-  const title3 = 'Have tour guide',
-    desc3 = 'First time in North? don’t worry you can have a tour guide';
+  const information = [
+    {
+      title: `${props.activityNumber}+ activities`,
+      desc: 'Enjoy a variety of activities throughout the north!',
+      img: activity,
+    },
+    {
+      title: 'Explore Cities',
+      desc: 'Every City has its own stuff, get to know them more with us',
+      img: cities,
+    },
+    {
+      title: 'Have tour guide',
+      desc: 'First time in North? don’t worry you can have a tour guide',
+      img: tourGuide,
+    },
+  ];
 
-  return (
-    <div className="container">
-      <div className="part">
-        <img src={icon1} className="iconStyle" alt="icon" />
-        <div className="text">
-          <h2>
-            {props.activityNumber}
-            {title1}
-          </h2>
-          <p>{desc1}</p>
-        </div>
+  function parts(arrayOfObj) {
+    return (
+      <div className="container">
+        {arrayOfObj.map((item) => {
+          return (
+            <div className="part">
+              <img src={item.img} className="iconStyle" alt="icon" />
+              <div className="text">
+                <h2>{item.title}</h2>
+                <p>{item.desc}</p>
+              </div>
+            </div>
+          );
+        })}
       </div>
+    );
+  }
 
-      <div className="part">
-        <img src={icon2} className="iconStyle" alt="icon" />
-        <div className="text">
-          <h2>{title2}</h2>
-          <p>{desc2}</p>
-        </div>
-      </div>
-
-      <div className="part">
-        <img src={icon3} className="iconStyle" alt="icon" />
-        <div className="text">
-          <h2>{title3}</h2>
-          <p>{desc3}</p>
-        </div>
-      </div>
-    </div>
-  );
+  return parts(information);
 }

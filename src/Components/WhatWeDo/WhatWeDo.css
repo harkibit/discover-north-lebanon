@@ -1,13 +1,18 @@
 .container {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin: 20px auto;
 }
 
+.iconStyle {
+  width: 100px;
+  height: 100px;
+}
 .part {
   display: flex;
-  margin: 0 50px;
   width: 400px;
+  margin: 10px 15px;
 }
 
 .text {
@@ -15,9 +20,11 @@
 }
 
 h2 {
+  font-size: 1.5rem;
   color: #091945;
 }
 
 p {
+  font-size: 0.9rem;
   color: rgba(69, 90, 100, 0.8);
 }
