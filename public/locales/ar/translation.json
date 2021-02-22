@@ -1,0 +1,11 @@
+{
+    "navbar":{
+        "about":"من نحن",
+        "activities":"الانشطه",
+        "cities":"المدن",
+        "tourGuide":"دليل الجولة"
+    },
+    "button":{
+        "text":"تسجيل الدخول"
+    }
+}

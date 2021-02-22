@@ -1,0 +1,9 @@
+.card {
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+}
+.cardbody {
+  text-align: center;
+  font-size: 18px;
+}

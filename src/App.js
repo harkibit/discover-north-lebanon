@@ -1,9 +1,15 @@
-import './App.css';
 import 'antd/dist/antd.css';
-import ButtonComponont from './Components/./Button/Button';
+import Navbar from './Components/Navbar/Navbar';
+import React, { Suspense } from 'react';
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Suspense fallback="loading">
+        <Navbar />
+      </Suspense>
+    </div>
+  );
 }
 
 export default App;
