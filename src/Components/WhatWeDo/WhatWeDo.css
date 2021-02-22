@@ -1,12 +1,17 @@
 .container {
   display: flex;
   justify-content: center;
+  margin: 20px auto;
 }
 
 .part {
   display: flex;
   margin: 0 50px;
   width: 400px;
+}
+
+.text {
+  margin-left: 15px;
 }
 
 h2 {
