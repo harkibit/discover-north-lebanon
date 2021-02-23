@@ -6,7 +6,7 @@ const ActivityCard = ({ activity, col }) => {
   const imageHeight = parseInt(activity.height);
   return (
     <Card
-      className={`card col${col}`}
+      className={`activityCard col${col}`}
       hoverable
       style={{
         width: activity.width,
@@ -21,7 +21,7 @@ const ActivityCard = ({ activity, col }) => {
         />
       }
     >
-      <Meta className="cardbody" title={activity.name} />
+      <Meta className="card-body" title={activity.name} />
     </Card>
   );
 };
