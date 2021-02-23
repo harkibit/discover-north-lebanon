@@ -4,7 +4,7 @@ import './JoinOurTeam.css';
 
 const JoinOurTeam = ({ guide }) => {
   return (
-    <Card className="card">
+    <Card className="card" bodyStyle={{ padding: '0' }}>
       <div className="cardbody">
         <img alt={guide.name} src={guide.imgSrc} />
         <div className="info">
