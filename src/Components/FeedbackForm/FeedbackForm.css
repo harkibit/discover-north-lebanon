@@ -1,0 +1,23 @@
+.sendButton {
+  margin: 0 15px;
+  font-size: 15px;
+  height: auto;
+  border-radius: 10px;
+  width: 93px;
+}
+
+.layoutHeight {
+  height: 230px;
+}
+
+.rowMargin {
+  margin-top: 50px;
+}
+
+.colMargin {
+  margin-top: 35px;
+}
+
+.col2Margin {
+  margin-top: 34px;
+}
