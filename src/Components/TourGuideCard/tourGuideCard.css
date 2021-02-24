@@ -1,0 +1,40 @@
+.cardSize {
+  width: 87%;
+  height: 10%;
+  display: flex;
+}
+.rowheight {
+  height: 100%;
+}
+.imgProp {
+  height: 100%;
+  width: 100%;
+}
+.col-align {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.icon-size {
+  font-size: 30px;
+}
+.icon-size:hover {
+  cursor: pointer;
+}
+.skeleton-container {
+  align-self: flex-start;
+  width: 100%;
+}
+.skeleton {
+  margin-top: 7px;
+  width: 50%;
+}
+.skeleton-small {
+  margin-top: 5px;
+  width: 80%;
+}
+.description {
+  margin-top: 5px;
+  width: 100%;
+}

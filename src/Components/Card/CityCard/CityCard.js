@@ -5,7 +5,7 @@ const { Meta } = Card;
 const CityCard = ({ city }) => {
   return (
     <Card
-      className="card"
+      className="cityCard"
       hoverable
       cover={<img alt={city.name} src={city.imgSrc} />}
     >
