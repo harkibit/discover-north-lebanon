@@ -34,9 +34,9 @@ const ActivitiesNorthLebanon = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="containers">
       <div className="header">
-        <h1 className="title">Activites in North Lebanon</h1>
+        <h1>Activites in North Lebanon</h1>
         <a className="link" href="##">
           See more activities
         </a>
