@@ -1,10 +1,11 @@
 .cardSize {
-  width: 350px;
   margin: 10px;
 }
+
 .spec {
   color: gray;
 }
+
 .centeredItem {
   width: 100%;
   display: flex;
