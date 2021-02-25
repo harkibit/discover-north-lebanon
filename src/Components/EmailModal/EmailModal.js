@@ -66,7 +66,7 @@ export default function ContactUs({ DTN_email = 'gtour180@gmail.com' }) {
         onCancel={handleCancel}
       >
         <Form form={form} {...layout} className="contact-form">
-          <Input type="hidden" name="page_email" value={'gtour180@gmail.com'} />
+          <Input type="hidden" name="page_email" value={DTN_email} />
           <Form.Item
             label="Full Name"
             name="newGuide_name"
