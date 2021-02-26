@@ -11,8 +11,10 @@ video {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  object-fit: contain;
 }
 .titleContainer {
+  position: relative;
   text-align: center;
   margin-bottom: 15px;
 }
