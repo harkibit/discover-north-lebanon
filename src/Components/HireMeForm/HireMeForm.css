@@ -1,0 +1,61 @@
+.ant-form-item-control {
+  margin: auto;
+}
+.hiremeform {
+  padding: 20px;
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  justify-content: center;
+}
+.hireMe-div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 30px;
+  justify-content: center;
+}
+.ant-row .ant-form-item .site-config-provider-calendar-wrapper {
+  width: 200px;
+}
+.ant-btn {
+  margin: auto;
+  position: absolute;
+  left: 50%;
+}
+.site-config-provider-calendar-wrapper {
+  border: solid 1px whitesmoke;
+  width: 100%;
+}
+
+.ant-picker-panel {
+  width: 100%;
+}
+.ant-col .ant-col-14 .ant-form-item-control {
+  margin: auto;
+}
+.ant-picker-calendar .ant-picker-calendar-mini {
+  margin: auto;
+  width: 100%;
+}
+.ant-form-item .ant-select,
+.ant-form-item .ant-cascader-picker {
+  width: 0px;
+}
+.cities_select {
+  width: 100% !important;
+}
+.ant-form-item-required,
+.ant-form-item-label > label {
+  width: 110px !important;
+}
+@media only screen and (max-width: 1020px) {
+  .hireMe-div {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .calendar-div {
+    order: 2;
+  }
+}
