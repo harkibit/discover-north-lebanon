@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { Modal, Button, Form, Input } from 'antd';
+import { Modal, Form, Input } from 'antd';
 import './EmailModal.css';
 
 export default function ContactUs({ DTN_email = 'gtour180@gmail.com' }) {
@@ -55,9 +55,9 @@ export default function ContactUs({ DTN_email = 'gtour180@gmail.com' }) {
 
   return (
     <div>
-      <Button type="primary" onClick={showModal}>
-        Join us!
-      </Button>
+      <span onClick={showModal}>
+        <u> Join our tour guide team! </u>
+      </span>
       <Modal
         title={[<div className="title_modal">Welcome!</div>]}
         visible={isModalVisible}
