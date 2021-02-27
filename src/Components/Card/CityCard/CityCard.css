@@ -1,11 +1,10 @@
-.card {
+.cityCard {
   width: 30%;
   height: 417px;
   margin: auto;
-  border: 1px solid rgba(0, 145, 234, 0.3);
   border-radius: 5px;
 }
-.card img {
+.cityCard img {
   height: 351px;
 }
 .meta {

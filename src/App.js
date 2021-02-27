@@ -1,8 +1,12 @@
 import 'antd/dist/antd.css';
-import './App.css';
+import React, { Suspense } from 'react';
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Suspense fallback="loading"></Suspense>
+    </div>
+  );
 }
 
 export default App;

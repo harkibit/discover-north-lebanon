@@ -1,0 +1,106 @@
+import React from 'react';
+import './FeedbackForm.css';
+import emailjs from 'emailjs-com';
+import { SendOutlined, UserOutlined } from '@ant-design/icons';
+import { Layout, Row, Col, Typography, Input, Button, Form } from 'antd';
+
+const { Title } = Typography;
+
+function FeedbackFormComponent({
+  user_name,
+  DTN_email = 'gtour180@gmail.com',
+}) {
+  const [form] = Form.useForm();
+
+  function sendEmail(e) {
+    emailjs
+      .sendForm(
+        'service_qmp8xcc',
+        'template_8ojjr8x',
+        '.feedbackForm',
+        'user_iKQsvNK9d1jdceleL9Lht'
+      )
+      .then(
+        (result) => {
+          window.alert('Your message has been sent! Thanks for your time.');
+        },
+        (error) => {
+          window.alert('Something went wrong. Try again!');
+        }
+      );
+    form.resetFields();
+  }
+
+  const handleSubmit = () => {
+    sendEmail();
+  };
+
+  return (
+    <div>
+      <Form form={form} onFinish={handleSubmit} className="feedbackForm">
+        <Layout className="layoutHeight">
+          <Row className="firstRowMargin">
+            <Col span={8} offset={3} className="firstColumnMargin">
+              <Title level={2}>Your Opinion Always Matters</Title>
+              <Title level={5}>
+                After visiting our site, you may have some advises. We would
+                like to hear them from you.
+              </Title>
+            </Col>
+            <Input type="hidden" name="user_name" value={user_name} />
+            <Input type="hidden" name="DTN_email" value={DTN_email} />
+            <Col span={8} offset={-2} className="colMarginTop">
+              <Row justify="end" className="row-width">
+                <Form.Item
+                  name="user_email"
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please input your email!',
+                    },
+                  ]}
+                >
+                  <Input
+                    type="email"
+                    name="user_email"
+                    className="input_email"
+                    placeholder="  Your Email..."
+                    prefix={<UserOutlined className="userIcon" />}
+                  />
+                </Form.Item>
+              </Row>
+              <Row justify="end" className="row-width">
+                <Form.Item
+                  name="message"
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please input your message!',
+                    },
+                  ]}
+                >
+                  <Input.TextArea
+                    name="message"
+                    className="input_message"
+                    placeholder="Express yourself"
+                  />
+                </Form.Item>
+              </Row>
+              <Row>
+                <Col className="buttonColumn">
+                  <Form.Item>
+                    <Button type="primary" htmlType="submit">
+                      Send <SendOutlined />{' '}
+                    </Button>
+                  </Form.Item>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Layout>
+      </Form>
+    </div>
+  );
+}
+
+export default FeedbackFormComponent;
