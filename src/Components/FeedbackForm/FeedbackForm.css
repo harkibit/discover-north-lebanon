@@ -1,0 +1,36 @@
+.layoutHeight {
+  height: 230px;
+}
+
+.firstRowMargin {
+  margin-top: 50px;
+}
+
+.hr-vertical {
+  border: none;
+  border-left: 1px solid #dadce0;
+  width: 3px;
+  height: 120%;
+}
+
+.colMarginTop {
+  margin-top: 20px;
+  margin-right: 100px;
+}
+
+.userIcon {
+  color: #087ce7;
+}
+
+.colMargin2 {
+  margin-top: -45px;
+  margin-right: 100px;
+}
+
+.sendButton {
+  margin: 0 15px;
+  font-size: 15px;
+  height: auto;
+  border-radius: 10px;
+  width: 93px;
+}
