@@ -1,10 +1,10 @@
 import 'antd/dist/antd.css';
-import Feedback from './Components/FeedbackForm/FeedbackForm';
+import React, { Suspense } from 'react';
 
 function App() {
   return (
     <div className="App">
-      <Feedback />
+      <Suspense fallback="loading"></Suspense>
     </div>
   );
 }
