@@ -1,23 +1,16 @@
 .layoutHeight {
   height: 230px;
 }
-
 .firstRowMargin {
-  margin-top: 50px;
+  margin-top: 25px;
 }
-
-.hr-vertical {
-  border: none;
-  border-left: 1px solid #dadce0;
-  width: 3px;
-  height: 120%;
-}
-
-.colMarginTop {
-  margin-top: 20px;
+.firstColumnMargin {
   margin-right: 100px;
 }
 
+.colMarginTop {
+  margin-top: 20px !important;
+}
 .userIcon {
   color: #087ce7;
 }
@@ -27,8 +20,11 @@
   margin-right: 100px;
 }
 
-.sendButton {
-  margin: 0 15px;
+.ant-form-item {
+  width: 100%;
+}
+.buttonColumn {
+  margin: auto;
   font-size: 15px;
   height: auto;
   border-radius: 10px;
