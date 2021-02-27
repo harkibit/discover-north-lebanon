@@ -1,4 +1,5 @@
 import 'antd/dist/antd.css';
+import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import React, { Suspense } from 'react';
 

@@ -8,12 +8,23 @@ const { Title } = Typography;
 
 export default function CityCardItem(city) {
   const { imgsrc, name, info, activityNumber } = city;
+  const style = {
+    borderTopLeftRadius: '10px',
+    borderTopRightRadius: '10px',
+  };
   return (
     <div className="card">
-      <div class="container">
+      <div class="city-card-container">
         <Card
-          style={{ width: 350, height: 345, borderRadius: 10 }}
-          cover={<img className="img-size" alt="example" src={imgsrc} />}
+          style={{ width: 310, height: 310, borderRadius: 10 }}
+          cover={
+            <img
+              style={style}
+              className="img-size"
+              alt="example"
+              src={imgsrc}
+            />
+          }
         >
           <div className="meta-card-content">
             <div className="meta-card-title">
