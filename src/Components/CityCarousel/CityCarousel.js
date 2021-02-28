@@ -3,22 +3,7 @@ import { Modal } from 'antd';
 import './CityCarousel.css';
 import { LeftOutlined, RightOutlined, CloseOutlined } from '@ant-design/icons';
 
-export default function CityCarousel() {
-  const picArray = [
-    {
-      srcImg:
-        'https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8ZGF3bnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80',
-    },
-    {
-      srcImg:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy1uZTBlxjOfVEiZsIt9FSo_bkxgEb6_OslQ&usqp=CAU',
-    },
-    { srcImg: 'https://static.toiimg.com/photo/72975551.cms' },
-    {
-      srcImg:
-        'https://inteng-storage.s3.amazonaws.com/img/iea/nZwXYgDgOv/sizes/the-moon-images_resize_md.jpg',
-    },
-  ];
+export default function CityCarousel({ picArray }) {
   const [imgSrc, setImgSrc] = useState(picArray[0].srcImg);
   const [isModalVisible, setIsModalVisible] = useState(false);
 
