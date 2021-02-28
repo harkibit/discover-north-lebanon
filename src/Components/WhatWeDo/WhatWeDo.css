@@ -1,0 +1,30 @@
+.iconContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
+.iconStyle {
+  width: 100px;
+  height: 100px;
+}
+.part {
+  display: flex;
+  width: 400px;
+  margin: 10px 15px;
+}
+
+.text {
+  margin-left: 15px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #091945;
+}
+
+p {
+  font-size: 0.9rem;
+  color: rgba(69, 90, 100, 0.8);
+}

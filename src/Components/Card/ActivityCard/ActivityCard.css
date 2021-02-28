@@ -1,9 +1,9 @@
-.card {
+.activityCard {
   margin: auto;
   border: none;
   border-radius: 5px;
 }
-.cardbody {
+.card-body {
   text-align: center;
   font-size: 18px;
 }
