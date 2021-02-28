@@ -113,8 +113,8 @@ export default function ContactUs({
                 required
               >
                 {citiesArray.map((city, index) => (
-                  <Option key={index} value={city.name} name="city">
-                    {city.name}
+                  <Option key={index} value={city.city} name="city">
+                    {city.city}
                   </Option>
                 ))}
               </Select>
@@ -156,7 +156,7 @@ export default function ContactUs({
             </Form.Item>
           </div>
         </div>
-        <div>
+        <div className="send-btn">
           <Form.Item>
             <Button type="primary" htmlType="submit">
               Send
