@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
 }
-.header {
+.headers {
   width: 75%;
   margin: 32px;
   display: flex;
