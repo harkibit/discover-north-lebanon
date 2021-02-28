@@ -15,7 +15,7 @@ export default function ActivitiesCarousel({ actPicArray, carWidth }) {
       >
         {actPicArray.map((pic, index) => (
           <div className="carousel-item" key={index}>
-            <Image src={pic.imgsrc} />
+            <Image width="100%" height="70ch" src={pic.imgsrc} />
           </div>
         ))}
       </Carousel>

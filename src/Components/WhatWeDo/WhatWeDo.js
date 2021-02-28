@@ -25,7 +25,7 @@ export default function WhatWeDo(props) {
 
   function parts(arrayOfObj) {
     return (
-      <div className="container">
+      <div className="iconContainer">
         {arrayOfObj.map((item) => {
           return (
             <div className="part">
