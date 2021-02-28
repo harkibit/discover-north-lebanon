@@ -15,7 +15,7 @@
 .search-btn:hover {
   box-shadow: 1px 1px 1px 1px rgb(249, 249, 249);
 }
-button {
+.search-btn {
   border-color: transparent;
   background-color: transparent;
   border-radius: 70px;

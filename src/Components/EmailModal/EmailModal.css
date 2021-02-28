@@ -1,0 +1,28 @@
+.title_modal {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  padding: 0px;
+  font-size: x-large;
+  color: white;
+}
+.ant-modal-header {
+  padding: 30px 10px 30px 10px;
+  background-image: url('modalHeader.jpg');
+}
+.ant-modal-footer {
+  padding: 15px 10px 10px 10px;
+}
+.input_name,
+.input_message,
+.input_email {
+  width: 250px;
+}
+.input_city,
+.input_spec {
+  width: 150px;
+}
+span:hover {
+  color: blue;
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.activityCard {
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+}
+.card-body {
+  text-align: center;
+  font-size: 18px;
+}

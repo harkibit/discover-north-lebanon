@@ -1,0 +1,11 @@
+{
+    "navbar":{
+        "about":"About",
+        "activities":"Activities",
+        "cities":"Cities",
+        "tourGuide":"Tour Guide"
+    },
+    "button":{
+        "text":"Sign In"
+    }
+}
