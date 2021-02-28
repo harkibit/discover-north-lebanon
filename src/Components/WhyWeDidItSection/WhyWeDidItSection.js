@@ -6,9 +6,9 @@ const { Title, Paragraph } = Typography;
 
 function WhyWeDidItSection({ imgSrc, title, text }) {
   return (
-    <div className="align">
+    <div className="style-align">
       <img src={imgSrc} className="icon-size" />
-      <Title level={3} className="margin-top">
+      <Title level={3} className="margin-top-parag">
         {title}
       </Title>
       <Paragraph> {text} </Paragraph>
