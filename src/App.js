@@ -1,12 +1,15 @@
 import 'antd/dist/antd.css';
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './Components/Navbar/Navbar';
+import CitiesPage from './Pages/CitiesPage/CitiesPage';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Suspense fallback="loading">
+          <Navbar />
           <Switch>
             <Route exact path="/">
               {/* Home page */}
@@ -15,7 +18,7 @@ function App() {
               {/* Activities page */}
             </Route>
             <Route exact path="/cities">
-              {/* Cities page */}
+              <CitiesPage />
             </Route>
             <Route exact path="/tour-guide">
               {/* TourGuide page */}
