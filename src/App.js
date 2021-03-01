@@ -18,7 +18,7 @@ function App() {
               {/* Activities page */}
             </Route>
             <Route exact path="/cities">
-              <CitiesPage />
+              {/* Cities Page  */}
             </Route>
             <Route exact path="/tour-guide">
               {/* TourGuide page */}
