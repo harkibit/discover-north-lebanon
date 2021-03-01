@@ -1,6 +1,4 @@
 import './HomePage.css';
-import Navbar from '../../Components/Navbar/Navbar';
-import Footer from '../../Components/Footer/Footer';
 import ActivitiesNorthLebanon from '../../Components/ActivitiesNorthLebanon/ActivitiesNorthLebanon';
 import Header from '../../Components/Header/Header';
 import NeedATourGuide from '../../Components/NeedATourGuide/NeedATourGuide';
@@ -9,7 +7,6 @@ import CityCard from '../../Components/Card/CityCard/CityCard';
 import JoinOurTeam from '../../Components/Card/JoinOurTeam/JoinOurTeam.js';
 import ActivityCard from '../../Components/Card/ActivityCard/ActivityCard';
 import { gems, cities, TourGuideData } from '../../MockData/data';
-import { Suspense } from 'react';
 import { Carousel } from 'antd';
 import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons';
 
@@ -28,10 +25,6 @@ const HomePage = () => {
 
   return (
     <div className="homePage">
-      <Suspense fallback="loading">
-        <Navbar />
-      </Suspense>
-
       <Header />
 
       <div className="under">
@@ -76,8 +69,6 @@ const HomePage = () => {
             })}
           </Carousel>
         </div>
-
-        <Footer />
       </div>
     </div>
   );
