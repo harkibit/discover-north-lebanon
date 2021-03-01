@@ -112,9 +112,9 @@ export default function ContactUs({
                 }}
                 required
               >
-                {citiesArray.map((city, index) => (
-                  <Option key={index} value={city.city} name="city">
-                    {city.city}
+                {citiesArray.map((item, index) => (
+                  <Option key={index} value={item.city} name="city">
+                    {item.city}
                   </Option>
                 ))}
               </Select>
