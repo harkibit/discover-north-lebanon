@@ -1,23 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './UserInfo.css';
 import { Typography } from 'antd';
-import { EditOutlined } from '@ant-design/icons';
+import UploadPhoto from './UploadPhoto';
 
-const { Text } = Typography;
+const { Title } = Typography;
 
 function UserInfoComponent({ userInfo }) {
+  const [editableStr, setEditableStr] = useState(userInfo.name);
   return (
     <div className="flex">
-      <div>
-        <img src={userInfo.imgSrc} />
-      </div>
-      <div className="nameBloc">
-        <Text>{userInfo.name}</Text>
-        <div className="editText">
-          <EditOutlined style={{ fontSize: '12px', color: '#455A64' }} />
-          <Text> Edit</Text>
-        </div>
-      </div>
+      <UploadPhoto />
+      <Title
+        level={4}
+        className="name-edit"
+        editable={{ onChange: setEditableStr }}
+      >
+        {editableStr}
+      </Title>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import { GlobalOutlined } from '@ant-design/icons';
 import './Navbar.css';
 import ButtonComponont from '../Button/Button';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const LANG_SPECS = [
   {
@@ -49,15 +50,23 @@ export default function Navbar() {
     <div>
       <Layout id="headerStyle">
         <div className="leftRightSides">
-          <img className="logo" src={logo}></img>
+          <img className="logo" alt="discover the north Logo" src={logo}></img>
           {/* the img represent our logo */}
         </div>
 
         <Menu className="headerStyleCenter" mode="horizontal">
-          <Menu.Item key="1">{t('navbar.about')}</Menu.Item>
-          <Menu.Item key="2">{t('navbar.activities')}</Menu.Item>
-          <Menu.Item key="3">{t('navbar.cities')}</Menu.Item>
-          <Menu.Item key="4">{t('navbar.tourGuide')}</Menu.Item>
+          <Menu.Item key="1">
+            <Link to="/about-us">{t('navbar.about')} </Link>
+          </Menu.Item>
+          <Menu.Item key="2">
+            <Link to="/activities">{t('navbar.activities')} </Link>
+          </Menu.Item>
+          <Menu.Item key="3">
+            <Link to="/cities">{t('navbar.cities')} </Link>
+          </Menu.Item>
+          <Menu.Item key="4">
+            <Link to="/tour-guide">{t('navbar.tourGuide')} </Link>
+          </Menu.Item>
         </Menu>
 
         <div className="leftRightSides">
@@ -66,7 +75,7 @@ export default function Navbar() {
             overlay={menu}
             placement="bottomCenter"
             icon={<GlobalOutlined />}
-          ></Dropdown.Button>
+          />
           <ButtonComponont text={t('button.text')} type="primary" />
         </div>
       </Layout>
