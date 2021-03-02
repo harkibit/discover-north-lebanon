@@ -50,7 +50,7 @@ export default function Navbar() {
     <div>
       <Layout id="headerStyle">
         <div className="leftRightSides">
-          <img className="logo" src={logo}></img>
+          <img className="logo" alt="discover the north Logo" src={logo}></img>
           {/* the img represent our logo */}
         </div>
 

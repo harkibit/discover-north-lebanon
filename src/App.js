@@ -2,7 +2,6 @@ import 'antd/dist/antd.css';
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
-import CitiesPage from './Pages/CitiesPage/CitiesPage';
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
               {/* Activities page */}
             </Route>
             <Route exact path="/cities">
-              <CitiesPage />
+              {/* Cities Page  */}
             </Route>
             <Route exact path="/tour-guide">
               {/* TourGuide page */}
