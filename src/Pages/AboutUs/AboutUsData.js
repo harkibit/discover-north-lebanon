@@ -30,9 +30,9 @@ export const teamMembers = [
     name: 'Osama Abdullah',
     specialization: 'Team Lead',
     url: {
-      github: '#',
-      linkedin: '#',
-      twitter: '#',
+      github: 'https://github.com/osamaakb',
+      linkedin: 'https://www.linkedin.com/in/osama-akb-1b6391108',
+      twitter: 'https://www.twitter.com/AkbOsama',
     },
   },
   {
@@ -41,9 +41,9 @@ export const teamMembers = [
     name: 'Hiba AbdelKarim',
     specialization: 'Junior Engineer',
     url: {
-      github: '#',
-      linkedin: '#',
-      twitter: '#',
+      github: 'https://github.com',
+      linkedin: 'https://www.linkedin.com',
+      twitter: 'https://www.twitter.com',
     },
   },
   {
@@ -52,9 +52,9 @@ export const teamMembers = [
     name: 'Bakhos Rachwan',
     specialization: 'Junior Engineer',
     url: {
-      github: '#',
-      linkedin: '#',
-      twitter: '#',
+      github: 'https://github.com/bakhosRachwan',
+      linkedin: 'https://www.linkedin.com/in/bakhos-rachwan',
+      twitter: 'https://www.twitter.com',
     },
   },
   {
@@ -63,9 +63,9 @@ export const teamMembers = [
     name: 'AbdelRaouf Dannaoui',
     specialization: 'Junior Engineer',
     url: {
-      github: '#',
-      linkedin: '#',
-      twitter: '#',
+      github: 'https://github.com',
+      linkedin: 'https://www.linkedin.com',
+      twitter: 'https://www.twitter.com',
     },
   },
   {
@@ -74,9 +74,9 @@ export const teamMembers = [
     name: 'Maryam AbdelKarim',
     specialization: 'Junior Engineer',
     url: {
-      github: '#',
-      linkedin: '#',
-      twitter: '#',
+      github: 'https://github.com',
+      linkedin: 'https://www.linkedin.com',
+      twitter: 'https://www.twitter.com',
     },
   },
   {
@@ -85,9 +85,9 @@ export const teamMembers = [
     name: 'Charbel Tarrazi',
     specialization: 'Junior Engineer',
     url: {
-      github: '#',
-      linkedin: '#',
-      twitter: '#',
+      github: 'https://github.com',
+      linkedin: 'https://www.linkedin.com',
+      twitter: 'https://www.twitter.com',
     },
   },
 ];
