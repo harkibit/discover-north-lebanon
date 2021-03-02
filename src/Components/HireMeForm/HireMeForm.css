@@ -3,17 +3,17 @@
 }
 .hiremeform {
   padding: 20px;
-  width: 60%;
+  width: 70%;
   margin: auto;
   display: grid;
   grid-template-rows: auto auto;
-  grid-gap: 10px;
+  grid-gap: 0px;
   justify-content: center;
 }
 .hireMe-div {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-gap: 30px;
+  grid-gap: 50px;
   justify-content: center;
 }
 .ant-row .ant-form-item .site-config-provider-calendar-wrapper {
@@ -49,6 +49,13 @@
 .ant-form-item-required,
 .ant-form-item-label > label {
   width: 110px !important;
+}
+.send-btn {
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+  height: auto;
+  border-radius: 10px !important;
 }
 @media only screen and (max-width: 1020px) {
   .hireMe-div {
