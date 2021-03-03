@@ -12,15 +12,15 @@ const TeamCard = ({ imgsrc, name, specialization, url }) => {
     <Card
       hoverable
       className="cardSize"
-      cover={<img src={imgsrc} />}
+      cover={<img src={imgsrc} alt="team member picture" />}
       actions={[
-        <a href={url.github} target="_blank">
+        <a href={url.github} target="_blank" rel="noreferrer">
           <GithubOutlined key="github" />
         </a>,
-        <a href={url.linkedin} target="_blank">
+        <a href={url.linkedin} target="_blank" rel="noreferrer">
           <LinkedinOutlined key="linkedin" />
         </a>,
-        <a href={url.twitter} target="_blank">
+        <a href={url.twitter} target="_blank" rel="noreferrer">
           <TwitterOutlined key="twitter" />
         </a>,
       ]}
