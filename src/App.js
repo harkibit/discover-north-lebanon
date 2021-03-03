@@ -2,6 +2,7 @@ import 'antd/dist/antd.css';
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
+import AboutUsPage from './Pages/AboutUs/AboutUs';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
               {/* UserProfile page */}
             </Route>
             <Route exact path="/about-us">
-              {/* AboutUs page */}
+              <AboutUsPage />
             </Route>
             <Route exact path="*">
               <h1>You just made a BIG FAT ERROR! Apocalypse!</h1>
