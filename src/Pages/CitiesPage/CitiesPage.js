@@ -3,6 +3,7 @@ import CityCardItem from '../../Components/CityCardItem/CityCardItem.js';
 import './CitiesPage.css';
 
 export default function CitiesPage({ data }) {
+  console.log(data);
   return (
     <div className="cityPage">
       <div className="cityList">
@@ -13,7 +14,7 @@ export default function CitiesPage({ data }) {
                 imgsrc={city.image}
                 name={city.name}
                 info={city.description}
-                activityNumber={city.activity.length}
+                activityNumber={city['activity-number']}
               />
             </div>
           );

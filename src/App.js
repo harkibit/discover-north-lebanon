@@ -3,6 +3,8 @@ import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import AboutUsPage from './Pages/AboutUs/AboutUs';
+import CitiesPage from './Pages/CitiesPage/CitiesPage';
+import cities from './MockData/cities.json';
 
 function App() {
   return (
@@ -18,7 +20,7 @@ function App() {
               {/* Activities page */}
             </Route>
             <Route exact path="/cities">
-              {/* Cities Page  */}
+              <CitiesPage data={cities} />
             </Route>
             <Route exact path="/tour-guide">
               {/* TourGuide page */}
