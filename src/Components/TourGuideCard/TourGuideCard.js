@@ -8,9 +8,7 @@ function TourGuideCard(tourGuide) {
   return (
     <Card
       className="tour-guide-card"
-      cover={
-        <img className="imgProp" src={tourGuide.imgsrc} alt="Guider image" />
-      }
+      cover={<img className="imgProp" src={tourGuide.imgsrc} alt="Guider" />}
     >
       <Row className="rowheight">
         <Col span={20}>
