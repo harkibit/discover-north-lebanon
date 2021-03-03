@@ -4,7 +4,7 @@ import Button from '../Button/Button';
 import { Card, Row, Col, Tooltip, Tag, Skeleton } from 'antd';
 import { EllipsisOutlined } from '@ant-design/icons';
 
-function TourGuideCard({ tourGuide }) {
+function TourGuideCard(tourGuide) {
   return (
     <Card
       className="cardSize"
