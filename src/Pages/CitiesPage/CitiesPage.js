@@ -1,18 +1,20 @@
 import React from 'react';
-import { citiesData } from './citiesData';
-import CityItem from '../../Components/CityItem/CityItem.js';
+import CityCardItem from '../../Components/CityCardItem/CityCardItem.js';
 import './CitiesPage.css';
 
-export default function CitiesPage() {
+export default function CitiesPage({ data }) {
   return (
     <div className="cityPage">
-      <h1 className="citiesTitle">Cities</h1>
       <div className="cityList">
-        {citiesData.map((city, indx) => {
-          console.log(city.imgsrc);
+        {data.map((city, i) => {
           return (
-            <div key={indx} className="cityLs">
-              <CityItem city={city} />
+            <div key={i} className="cityLs">
+              <CityCardItem
+                imgsrc={city.image}
+                name={city.name}
+                info={city.description}
+                activityNumber={city.activity.length}
+              />
             </div>
           );
         })}
