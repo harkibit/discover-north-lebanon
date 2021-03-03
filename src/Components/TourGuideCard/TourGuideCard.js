@@ -7,8 +7,10 @@ import { EllipsisOutlined } from '@ant-design/icons';
 function TourGuideCard(tourGuide) {
   return (
     <Card
-      className="cardSize"
-      cover={<img className="imgProp" src={tourGuide.imgsrc} />}
+      className="tour-guide-card"
+      cover={
+        <img className="imgProp" src={tourGuide.imgsrc} alt="Guider image" />
+      }
     >
       <Row className="rowheight">
         <Col span={20}>
@@ -36,10 +38,7 @@ function TourGuideCard(tourGuide) {
             ) : (
               <span>
                 {tourGuide.description.split(' ').slice(0, 55).join(' ')}
-                <a href="#" className="see-more">
-                  {' '}
-                  See more ..
-                </a>
+                <span className="see-more"> See more ..</span>
               </span>
             )}
           </Row>
