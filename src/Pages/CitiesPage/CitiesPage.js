@@ -1,13 +1,12 @@
 import React from 'react';
 import CityCardItem from '../../Components/CityCardItem/CityCardItem.js';
 import './CitiesPage.css';
-import cities from '../../MockData/cities.json';
 
-export default function CitiesPage() {
+export default function CitiesPage({ data }) {
   return (
     <div className="cityPage">
       <div className="cityList">
-        {cities.map((city, i) => {
+        {data.map((city, i) => {
           <div key={i} className="cityLs">
             <CityCardItem
               imgsrc={city.image}
