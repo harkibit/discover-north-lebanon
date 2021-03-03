@@ -48,7 +48,7 @@ export default function Map(props) {
     longitude: long,
     zoom: zoomNb,
   });
-  const onSelectCity = () => {
+  const onReset = () => {
     setViewport({
       latitude: lat,
       longitude: long,
@@ -90,7 +90,7 @@ export default function Map(props) {
       <FullscreenControl style={fullscreenControlStyle} />
       <NavigationControl style={navStyle} />
       <ScaleControl style={scaleControlStyle} />
-      <ControlPanel onSelectCity={onSelectCity} />
+      <ControlPanel onReset={onReset} />
     </ReactMapGL>
   );
 }

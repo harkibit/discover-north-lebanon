@@ -1,9 +1,9 @@
 import React from 'react';
 import './ControlPanel.css';
 
-export default function ControlPanel({ onSelectCity }) {
+export default function ControlPanel({ onReset }) {
   return (
-    <div className="control-panel" onClick={() => onSelectCity()}>
+    <div className="control-panel" onClick={() => onReset()}>
       Reset Default
     </div>
   );
