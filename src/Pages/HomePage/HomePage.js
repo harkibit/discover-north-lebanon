@@ -6,7 +6,8 @@ import WhatWeDo from '../../Components/WhatWeDo/WhatWeDo';
 import CityCard from '../../Components/Card/CityCard/CityCard';
 import JoinOurTeam from '../../Components/Card/JoinOurTeam/JoinOurTeam.js';
 import ActivityCard from '../../Components/Card/ActivityCard/ActivityCard';
-import { gems, cities, TourGuideData } from '../../MockData/data';
+import { gems, TourGuideData } from '../../MockData/data';
+import cities from '../../MockData/cities.json';
 import { Carousel } from 'antd';
 import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons';
 
@@ -56,9 +57,9 @@ const HomePage = () => {
             <a href="/cities">See more cities</a>
           </div>
           <div className="citysCard">
-            {cities.map((city) => (
-              <ActivityCard activity={city} />
-            ))}
+            {cities.map((city, index) => {
+              return index < 4 ? <ActivityCard activity={city} /> : null;
+            })}
           </div>
         </div>
 

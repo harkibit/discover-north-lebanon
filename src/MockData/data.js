@@ -1,29 +1,3 @@
-export const guides = [
-  {
-    name: 'Bakhos',
-    imgSrc:
-      'https://i.pinimg.com/originals/32/16/1c/32161c354ff2251a9cb97382f2c81d37.jpg',
-    job: 'Hiking Guide',
-    desc:
-      'lorem ipsonma jakf kas  kasdb b aksbd lorem ipsonma jakf kas  kasdb b aksbd lorem ipsonma jakf kas  kasdb b aksbd',
-  },
-  {
-    name: 'Tony',
-    imgSrc:
-      'https://i.pinimg.com/originals/32/16/1c/32161c354ff2251a9cb97382f2c81d37.jpg',
-    job: 'Biking Guide',
-    desc:
-      'lorem ipsonma jakf kas  kasdb b aksbd lorem ipsonma jakf kas  kasdb b aksbd lorem ipsonma jakf kas  kasdb b aksbd',
-  },
-  {
-    name: 'Samer',
-    imgSrc:
-      'https://i.pinimg.com/originals/32/16/1c/32161c354ff2251a9cb97382f2c81d37.jpg',
-    job: 'Divig Guide',
-    desc:
-      'lorem ipsonma jakf kas  kasdb b aksbd lorem ipsonma jakf kas  kasdb b aksbd lorem ipsonma jakf kas  kasdb b aksbd',
-  },
-];
 export const gems = [
   {
     name: 'Tripoli',
@@ -56,61 +30,31 @@ export const gems = [
     id: '5',
   },
 ];
-export const cities = [
-  {
-    name: 'Tripoli',
-    imgSrc:
-      'https://i.pinimg.com/originals/32/16/1c/32161c354ff2251a9cb97382f2c81d37.jpg',
-    width: '23%',
-    height: '270px',
-  },
-  {
-    name: 'Tripoli',
-    imgSrc:
-      'https://i.pinimg.com/originals/32/16/1c/32161c354ff2251a9cb97382f2c81d37.jpg',
-    width: '23%',
-    height: '270px',
-  },
-  {
-    name: 'Tripoli',
-    imgSrc:
-      'https://i.pinimg.com/originals/32/16/1c/32161c354ff2251a9cb97382f2c81d37.jpg',
-    width: '23%',
-    height: '270px',
-  },
-  {
-    name: 'Tripoli',
-    imgSrc:
-      'https://i.pinimg.com/originals/32/16/1c/32161c354ff2251a9cb97382f2c81d37.jpg',
-    width: '23%',
-    height: '270px',
-  },
-];
 export const activities = [
   {
     name: 'Hiking',
-    imgSrc:
+    image:
       'https://www.lebanontraveler.com/lebanontraveler/Library/Images/Uploaded%20Images/2017/LT/Articles/Hikes/005-Bentael-copy.jpg',
     width: '100%',
     height: '654px',
   },
   {
     name: 'Skiing',
-    imgSrc:
+    image:
       'https://www.aljazeera.com/wp-content/uploads/2017/03/8697968b54d14ef7bca47aac9502f8fe_8.jpeg',
     width: '100%',
     height: '331px',
   },
   {
     name: 'Mountain Biking',
-    imgSrc:
+    image:
       'https://blogbaladi.com/wp-content/uploads/2016/08/biking2-624x333.jpg',
     width: '100%',
     height: '331px',
   },
   {
     name: 'ATV & Buggy',
-    imgSrc:
+    image:
       'https://mediaim.expedia.com/localexpert/641081/86491096-e817-4204-97e1-d8014798ef90.jpg?impolicy=resizecrop&rw=350&rh=197',
     width: '100%',
     height: '290px',
