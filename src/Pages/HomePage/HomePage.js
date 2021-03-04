@@ -30,7 +30,7 @@ const HomePage = () => {
       <div className="under">
         <WhatWeDo activityNumber={TourGuideData.length} />
 
-        <div className="hiddenGems">
+        <div className="hiddenGems" style={{ paddingTop: '30px' }}>
           <h1>Hidden Gems in North Lebanon</h1>
         </div>
 
@@ -44,13 +44,13 @@ const HomePage = () => {
           </Carousel>
         </div>
 
-        <div className="act">
+        <div className="act" style={{ padding: '40px 0' }}>
           <ActivitiesNorthLebanon />
         </div>
 
         <NeedATourGuide />
 
-        <div className="cities">
+        <div className="cities" style={{ paddingTop: '30px' }}>
           <div className="cityHeader">
             <h1>Cities in North Lebanon</h1>
             <a href="/cities">See more cities</a>
@@ -62,7 +62,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="teamCarousel">
+        <div className="teamCarousel" style={{ padding: '50px 0' }}>
           <Carousel autoplay effect="fade" dots={true} infinite>
             {TourGuideData.map((item, index) => {
               return index < 6
