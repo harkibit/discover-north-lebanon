@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar/Navbar';
 import AboutUsPage from './Pages/AboutUs/AboutUs';
 import CitiesPage from './Pages/CitiesPage/CitiesPage';
 import cities from './MockData/cities.json';
+import ErrorPage from './Pages/ErrorPage/ErrorPage';
 
 function App() {
   return (
@@ -32,8 +33,7 @@ function App() {
               <AboutUsPage />
             </Route>
             <Route exact path="*">
-              <h1>You just made a BIG FAT ERROR! Apocalypse!</h1>
-              {/* Error page (To be created maybe) */}
+              <ErrorPage />
             </Route>
           </Switch>
         </Suspense>
