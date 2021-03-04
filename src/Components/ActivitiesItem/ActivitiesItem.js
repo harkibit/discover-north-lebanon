@@ -1,31 +1,55 @@
 import React, { useState } from 'react';
 import './activityItem.css';
-import { Card, Image, Row, Col, Typography, Rate, Tooltip, Badge } from 'antd';
+import { Card, Row, Col, Typography, Rate, Tooltip, Badge } from 'antd';
 import {
   HeartOutlined,
   HeartFilled,
   DoubleRightOutlined,
 } from '@ant-design/icons';
-
 const { Title } = Typography;
-
-export default function ActivitiesItem(activity) {
-  const [like, setLike] = useState(false);
+export default function ActivitiesItem(props) {
+  const {
+    index,
+    imgsrc,
+    name,
+    cityName,
+    rating,
+    price,
+    tags,
+    handleMouseOver,
+    handleMouseLeave,
+  } = props;
+  const [activeActivityItem, setActiveActivityItem] = useState(null);
+  const activate = () => {
+    setActiveActivityItem(activeActivityItem);
+  };
+  const [like, setLike] = useState(true);
   const toggleLike = () => {
     setLike(!like);
   };
 
   return (
-    <Card className="cardSize" hoverable>
+    <Card
+      className="activity-item-card"
+      hoverable
+      key={index}
+      onMouseOver={(elem) => handleMouseOver(index)}
+      onMouseLeave={(elem) => handleMouseLeave(index)}
+      onClick={activate}
+    >
       <Row>
-        <Col span={10}>
-          <Image src={activity.imgsrc} width={200} height={150} />
+        <Col span={9}>
+          <img
+            className="activity-card-image"
+            src={imgsrc}
+            width={210}
+            height={150}
+          />
         </Col>
-
-        <Col span={14}>
+        <Col span={15}>
           <Row>
             <Col span={21}>
-              <Title level={3}>{activity.name}</Title>
+              <Title level={3}>{name}</Title>
             </Col>
             <Col span={3}>
               <Tooltip
@@ -34,42 +58,43 @@ export default function ActivitiesItem(activity) {
               >
                 {like ? (
                   <HeartOutlined
-                    className="heartOutlined heartSize"
+                    className="heartOutlined act-heartSize"
                     onClick={toggleLike}
                   />
                 ) : (
                   <HeartFilled
-                    className="heartFilled heartSize"
+                    className="heartFilled act-heartSize"
                     onClick={toggleLike}
                   />
                 )}
               </Tooltip>
             </Col>
           </Row>
-
           <Row className="middle-row-height">
-            <Col span={19}>
-              {activity.cityName}
+            <Col span={19} className="cityName">
+              {cityName}
               <br />
-              <Rate disabled defaultValue={activity.rating} />
+              <Rate disabled allowHalf defaultValue={rating} />
             </Col>
             <Col span={5}>
-              <Title level={3}>{activity.price}</Title>
+              <Title level={3}>{price === 'FREE' ? price : price + '$'}</Title>
             </Col>
           </Row>
-
-          <hr />
-
-          <Row justify="space-around">
-            {activity.tags.length < 5
-              ? activity.tags.map((tag) => <span>{tag}</span>)
-              : activity.tags.slice(0, 4).map((tag) => <span>{tag}</span>)}{' '}
-            <Badge
-              overflowCount={10}
-              style={{ backgroundColor: '#108ee9' }}
-              count={activity.tags.length - 4}
-            />
-            <span>
+          <hr style={{ borderTop: 'lightgray' }} />
+          <Row justify="space-between">
+            {tags.length < 4
+              ? tags.map((tag) => <span className="tagsFontColor">{tag}</span>)
+              : tags
+                  .slice(0, 3)
+                  .map((tag) => <span className="tagsFontColor">{tag}</span>)}
+            {tags.length > 3 && (
+              <Badge
+                overflowCount={10}
+                style={{ backgroundColor: '#108EE9' }}
+                count={tags.length - 3}
+              />
+            )}
+            <span className="learnMore">
               learn more <DoubleRightOutlined />
             </span>
           </Row>
