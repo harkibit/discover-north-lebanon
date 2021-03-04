@@ -6,6 +6,7 @@ import AboutUsPage from './Pages/AboutUs/AboutUs';
 import CitiesPage from './Pages/CitiesPage/CitiesPage';
 import cities from './MockData/cities.json';
 import ErrorPage from './Pages/ErrorPage/ErrorPage';
+import TourGuidePage from './Pages/TourGuide/TourGuidePage';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
               <CitiesPage data={cities} />
             </Route>
             <Route exact path="/tour-guide">
-              {/* TourGuide page */}
+              <TourGuidePage />
             </Route>
             <Route exact path="/user-profile">
               {/* UserProfile page */}
