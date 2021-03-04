@@ -29,7 +29,7 @@ export default function CityCardItem(city) {
           <div className="meta-card-content">
             <div className="meta-card-title">
               <Title level={4}> {name} </Title>
-              <span className="act-numb">{activityNumber}activities</span>
+              <span className="act-numb">{activityNumber} activities</span>
             </div>
 
             <span>{info && info.split(' ').slice(0, 6).join(' ')} ..</span>

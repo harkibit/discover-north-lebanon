@@ -1,13 +1,10 @@
-.citiesTitle {
-  color: #091945;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  margin: 20px;
-}
-.cityLs {
-  color: #091945;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
+.cityList {
+  display: grid;
+  width: max-content;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr 3);
+  grid-template-areas:
+    'card1 card2 card3'
+    'card4 card5 card6'
+    'card7 card8 card';
 }
