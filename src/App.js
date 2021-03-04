@@ -1,8 +1,9 @@
 import 'antd/dist/antd.css';
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import FooterComponent from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
-
+import HomePage from './Pages/HomePage/HomePage';
 function App() {
   return (
     <div className="App">
@@ -11,7 +12,7 @@ function App() {
           <Navbar />
           <Switch>
             <Route exact path="/">
-              {/* Home page */}
+              <HomePage />
             </Route>
             <Route exact path="/activities">
               {/* Activities page */}
@@ -33,6 +34,7 @@ function App() {
               {/* Error page (To be created maybe) */}
             </Route>
           </Switch>
+          <FooterComponent />
         </Suspense>
       </Router>
     </div>
