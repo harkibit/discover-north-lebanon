@@ -14,7 +14,7 @@ const JoinOurTeam = ({ guide }) => {
           <p className="description">{guide.desc}</p>
           <ButtonComponont type="primary" text="Join Our Team" />
           <p className="cardfooter">
-            Check the rest of the team <a>Go Here</a>
+            Check the rest of the team <a href="/tour-guide">Go Here</a>
           </p>
         </div>
       </div>

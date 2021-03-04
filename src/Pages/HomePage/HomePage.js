@@ -53,7 +53,7 @@ const HomePage = () => {
         <div className="cities">
           <div className="cityHeader">
             <h1>Cities in North Lebanon</h1>
-            <a>See more cities</a>
+            <a href="/cities">See more cities</a>
           </div>
           <div className="citysCard">
             {cities.map((city) => (
