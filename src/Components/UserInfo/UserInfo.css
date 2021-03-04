@@ -1,22 +1,16 @@
-img {
-  border: 1px solid #d6dffc;
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-}
-
 .flex {
   display: flex;
+  width: 100%;
+  align-items: center;
 }
-
-.nameBloc {
-  align-self: center;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  display: flex;
-  flex-direction: column;
+.name-edit {
+  width: 200%;
+  margin-left: 10px;
 }
-
-.editText {
-  align-self: flex-start;
+.ant-upload {
+  width: 130px;
+}
+.ant-upload.ant-upload-select-picture-card {
+  height: 130px;
+  width: 130px;
 }

@@ -1,0 +1,23 @@
+.part1-aboutus {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hr-style {
+  width: 80%;
+  border: 1px solid #f0f0f0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.part3-team-members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 18px;
+  margin-left: 150px;
+  margin-right: 140px;
+}
+
+.part4-feedback {
+  margin-top: 80px;
+}
