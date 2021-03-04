@@ -13,7 +13,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 33px;
+  grid-gap: 2%;
   max-width: 75%;
 }
 .col0 {

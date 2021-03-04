@@ -3,20 +3,25 @@
   flex-direction: column;
 }
 .under {
+  width: 100%;
   background: #fff;
 }
 .hiddenGems h1 {
-  margin: 32px 0 32px 200px;
+  display: flex;
+  align-items: flex-start;
+  margin: 32px 0 32px 12%;
   width: 75%;
 }
 .gemCards {
   margin-bottom: 50px;
 }
+.act {
+  margin: 0 0 5% 0;
+}
 .cities {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 0 32px;
 }
 .cityHeader {
   width: 75%;
@@ -26,10 +31,10 @@
   margin: 30px 0;
 }
 .citysCard {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 33px;
-  max-width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 76%;
 }
 .ant-carousel .slick-dots li {
   background: black;
@@ -38,7 +43,7 @@
   margin: 0 10%;
 }
 .teamCarousel {
-  margin: 2%;
+  margin: 2% 0;
 }
 .ant-carousel .slick-prev,
 .ant-carousel .slick-next {

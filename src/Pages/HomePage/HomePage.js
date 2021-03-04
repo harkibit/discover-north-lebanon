@@ -44,7 +44,9 @@ const HomePage = () => {
           </Carousel>
         </div>
 
-        <ActivitiesNorthLebanon />
+        <div className="act">
+          <ActivitiesNorthLebanon />
+        </div>
 
         <NeedATourGuide />
 
