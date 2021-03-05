@@ -11,6 +11,8 @@ export const ID = React.createContext();
 
 export default function ActivitiesPage() {
   const [top, setTop] = useState(10);
+  const [container, setContainer] = useState(null);
+
   const [hover, setHover] = useState(false);
   const [id, setId] = useState(null);
   const handleMouseOver = (id) => {

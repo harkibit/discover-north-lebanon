@@ -6,6 +6,8 @@ import {
   HeartFilled,
   DoubleRightOutlined,
 } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
+
 const { Title } = Typography;
 export default function ActivitiesItem(props) {
   const {
@@ -44,6 +46,7 @@ export default function ActivitiesItem(props) {
             src={imgsrc}
             width={210}
             height={150}
+            alt="activity"
           />
         </Col>
         <Col span={15}>
@@ -94,9 +97,11 @@ export default function ActivitiesItem(props) {
                 count={tags.length - 3}
               />
             )}
-            <span className="learnMore">
-              learn more <DoubleRightOutlined />
-            </span>
+            <Link to={`/activities/${index}`}>
+              <span className="learnMore">
+                learn more <DoubleRightOutlined />
+              </span>
+            </Link>
           </Row>
         </Col>
       </Row>

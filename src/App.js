@@ -8,6 +8,8 @@ import cities from './MockData/cities.json';
 import ErrorPage from './Pages/ErrorPage/ErrorPage';
 import TourGuidePage from './Pages/TourGuide/TourGuidePage';
 import ActivitiesPage from './Pages/ActivitiesPage/ActivitiesPage';
+import SingleActivityPage from './Pages/SingleActivityPage/SingleActivityPage';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -22,13 +24,16 @@ function App() {
             <Route exact path="/activities">
               <ActivitiesPage />
             </Route>
+            <Route exact path="/activities/:id">
+              <SingleActivityPage />
+            </Route>
             <Route exact path="/cities">
               <CitiesPage data={cities} />
             </Route>
             <Route exact path="/tour-guide">
               <TourGuidePage />
             </Route>
-            <Route exact path="/user-profile">
+            <Route exact path="/:user_name">
               {/* UserProfile page */}
             </Route>
             <Route exact path="/about-us">
@@ -38,6 +43,7 @@ function App() {
               <ErrorPage />
             </Route>
           </Switch>
+          <Footer />
         </Suspense>
       </Router>
     </div>
