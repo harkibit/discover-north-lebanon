@@ -7,6 +7,7 @@ import {
   DoubleRightOutlined,
 } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
+import Like from '../Like/Like';
 
 const { Title } = Typography;
 export default function ActivitiesItem(props) {
@@ -25,11 +26,6 @@ export default function ActivitiesItem(props) {
   const activate = () => {
     setActiveActivityItem(activeActivityItem);
   };
-  const [like, setLike] = useState(true);
-  const toggleLike = () => {
-    setLike(!like);
-  };
-
   return (
     <Card
       className="activity-item-card"
@@ -55,22 +51,7 @@ export default function ActivitiesItem(props) {
               <Title level={3}>{name}</Title>
             </Col>
             <Col span={3}>
-              <Tooltip
-                placement="top"
-                title={like ? 'add to favorite' : 'remove from favorite'}
-              >
-                {like ? (
-                  <HeartOutlined
-                    className="heartOutlined act-heartSize"
-                    onClick={toggleLike}
-                  />
-                ) : (
-                  <HeartFilled
-                    className="heartFilled act-heartSize"
-                    onClick={toggleLike}
-                  />
-                )}
-              </Tooltip>
+              <Like />
             </Col>
           </Row>
           <Row className="middle-row-height">

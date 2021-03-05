@@ -1,20 +1,18 @@
 import React, { useState } from 'react';
 import './SingleActivityPage.css';
-import { Divider, Tooltip, PageHeader } from 'antd';
-import { HeartOutlined, HeartFilled } from '@ant-design/icons';
+import { Divider, PageHeader } from 'antd';
 import ActivitiesCarousel from '../../Components/ActivitiesCarousel/ActivitiesCarousel';
 import Button from '../../Components/Button/Button';
 import tourguideimg from '../../Components/WhatWeDo/icons/tourGuide.png';
 import { useParams } from 'react-router';
 import activities from '../../MockData/activities.json';
-
+import Like from '../../Components/Like/Like';
 export default function SingleActivityPage(props) {
   const { id } = useParams();
   const [like, setLike] = useState(true);
   const toggleLike = () => {
     setLike(!like);
   };
-  const buttonWidth = '1px';
   return (
     <div className="single-act-container">
       <PageHeader
@@ -32,22 +30,7 @@ export default function SingleActivityPage(props) {
                 <div className="header">
                   <div className="header-child-1">
                     <h1>{act.name}</h1>
-                    <Tooltip
-                      placement="top"
-                      title={like ? 'add to favorite' : 'remove from favorite'}
-                    >
-                      {like ? (
-                        <HeartOutlined
-                          className="heartOutlined heartSize"
-                          onClick={toggleLike}
-                        />
-                      ) : (
-                        <HeartFilled
-                          className="heartFilled heartSize"
-                          onClick={toggleLike}
-                        />
-                      )}
-                    </Tooltip>
+                    <Like />
                   </div>
                   <Divider />
                   <div className="header-child-2">

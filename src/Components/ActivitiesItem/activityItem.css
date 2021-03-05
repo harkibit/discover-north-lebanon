@@ -3,17 +3,8 @@
   width: 90%;
   border-radius: 10px;
 }
-.act-heartSize {
-  font-size: 25px;
-}
 .activity-card-image {
   border-radius: 10px;
-}
-.heartOutlined {
-  color: #c4d0b8;
-}
-.heartFilled {
-  color: rgb(248, 4, 4);
 }
 .middle-row-height {
   height: 70px;
