@@ -9,8 +9,6 @@ import { useParams } from 'react-router';
 import activities from '../../MockData/activities.json';
 
 export default function SingleActivityPage(props) {
-  const { activityName, tags, actPicArray, description } = props;
-
   const { id } = useParams();
   const [like, setLike] = useState(true);
   const toggleLike = () => {
@@ -26,60 +24,67 @@ export default function SingleActivityPage(props) {
         className="back-btn"
       />
       {activities
-        .filter((act) => id === act.id)
+        .filter((act) => parseInt(id) === act.id)
         .map((act) => {
-          // return (
-          <div className="grid-view">
-            <div className="left-side-grid">
-              <div className="header">
-                <div className="header-child-1">
-                  <h1>{act.name}</h1>
-                  <Tooltip
-                    placement="top"
-                    title={like ? 'add to favorite' : 'remove from favorite'}
-                  >
-                    {like ? (
-                      <HeartOutlined
-                        className="heartOutlined heartSize"
-                        onClick={toggleLike}
-                      />
-                    ) : (
-                      <HeartFilled
-                        className="heartFilled heartSize"
-                        onClick={toggleLike}
-                      />
-                    )}
-                  </Tooltip>
+          return (
+            <div className="grid-view">
+              <div className="left-side-grid">
+                <div className="header">
+                  <div className="header-child-1">
+                    <h1>{act.name}</h1>
+                    <Tooltip
+                      placement="top"
+                      title={like ? 'add to favorite' : 'remove from favorite'}
+                    >
+                      {like ? (
+                        <HeartOutlined
+                          className="heartOutlined heartSize"
+                          onClick={toggleLike}
+                        />
+                      ) : (
+                        <HeartFilled
+                          className="heartFilled heartSize"
+                          onClick={toggleLike}
+                        />
+                      )}
+                    </Tooltip>
+                  </div>
+                  <Divider />
+                  <div className="header-child-2">
+                    {act.related_tags &&
+                      act.related_tags.map((tag) => <span>{tag}</span>)}
+                  </div>
                 </div>
-                <Divider />
-                <div className="header-child-2">
-                  {act.related_tags &&
-                    act.related_tags.map((tag) => <span>{tag}</span>)}
+                <div className="left-grid-description">{act.description}</div>
+
+                <div className="left-grid-tour-guide">
+                  <div className="hire-box">
+                    <h1 className="icon-text">
+                      {' '}
+                      <img
+                        src={tourguideimg}
+                        className="iconStyle"
+                        alt="icon"
+                      />
+                      Need A Tour Guide?
+                    </h1>
+                    <Button
+                      buttonWidth={10}
+                      text="See Available tour guides"
+                      type="primary"
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="left-grid-description">{act.description}</div>
 
-              <div className="left-grid-tour-guide">
-                <div className="hire-box">
-                  <h1 className="icon-text">
-                    {' '}
-                    <img src={tourguideimg} className="iconStyle" alt="icon" />
-                    Need A Tour Guide?
-                  </h1>
-                  <Button
-                    buttonWidth={buttonWidth}
-                    text="See Available tour guides"
-                    type="primary"
-                  />
-                </div>
+              <div>
+                <ActivitiesCarousel
+                  actPicArray={act.images}
+                  carWidth={'61rem'}
+                />
               </div>
             </div>
-
-            <div>
-              <ActivitiesCarousel actPicArray={act.image} carWidth={'61rem'} />
-            </div>
-          </div>;
-          // );
+          );
         })}
     </div>
   );

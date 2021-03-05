@@ -11,6 +11,7 @@ import ActivitiesPage from './Pages/ActivitiesPage/ActivitiesPage';
 import SingleActivityPage from './Pages/SingleActivityPage/SingleActivityPage';
 import Footer from './Components/Footer/Footer';
 
+import './App.css';
 function App() {
   return (
     <div className="App">
