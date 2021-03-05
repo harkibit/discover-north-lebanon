@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import './SingleCityPage.css';
 import Map from '../../Components/Map/Map.js';
-import { Card, Button, Modal } from 'antd';
+import { Card, Button } from 'antd';
 import CityCarousel from '../../Components/CityCarousel/CityCarousel';
 import cities from '../../MockData/cities.json';
 import { PageHeader } from 'antd';
-import tourguideimg from '../../Components/WhatWeDo/icons/tourGuide.png';
-
-// const { confirm } = Modal;
+import tourGuide from './tourGuide.jpg';
 
 export default function SingleCityPage({ city }) {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -25,44 +23,19 @@ export default function SingleCityPage({ city }) {
       <div className="gallery-container" onClick={showModal}>
         <div className="gallery">
           <div className="gallery__item gallery__item--1">
-            {' '}
-            <img
-              src={city.images[0]}
-              alt="city pic"
-              class="gallery__img"
-            />{' '}
+            <img src={city.images[0]} alt="city pic" class="gallery__img" />{' '}
           </div>
           <div className="gallery__item gallery__item--2">
-            {' '}
-            <img
-              src={city.images[1]}
-              alt="city pic"
-              class="gallery__img"
-            />{' '}
+            <img src={city.images[1]} alt="city pic" class="gallery__img" />
           </div>
           <div className="gallery__item gallery__item--3">
-            {' '}
-            <img
-              src={city.images[2]}
-              alt="city pic"
-              class="gallery__img"
-            />{' '}
+            <img src={city.images[2]} alt="city pic" class="gallery__img" />
           </div>
           <div className="gallery__item gallery__item--4">
-            {' '}
-            <img
-              src={city.images[3]}
-              alt="city pic"
-              class="gallery__img"
-            />{' '}
+            <img src={city.images[3]} alt="city pic" class="gallery__img" />
           </div>
           <div className="gallery__item gallery__item--5">
-            {' '}
-            <img
-              src={city.images[4]}
-              alt="city pic"
-              class="gallery__img"
-            />{' '}
+            <img src={city.images[4]} alt="city pic" class="gallery__img" />
           </div>
         </div>
       </div>
@@ -126,13 +99,19 @@ export default function SingleCityPage({ city }) {
         </div>
       </div>
       <div className="hire-box">
-        <h1 className="icon-text">
-          <img src={tourguideimg} className="iconStyle" alt="icon" />
-          First Time in {city.name}? Hire a tour guide!
-        </h1>
-        <Button type="primary" className="seemore-btn">
-          Take me There!
-        </Button>
+        <div className="hire-box-text">
+          <h1 className="icon-text">
+            Don't got it alone!
+            <br />
+            Hire an expert to craft your trip.
+          </h1>
+          <Button type="primary" className="seemore-btn">
+            Learn more
+          </Button>
+        </div>
+        <div className="hire-box-img">
+          <img src={tourGuide} alt="this pic" className="tourGuide-image" />
+        </div>
       </div>
     </div>
   );

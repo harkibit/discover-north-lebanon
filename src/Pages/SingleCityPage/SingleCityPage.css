@@ -87,21 +87,31 @@
   justify-content: space-around;
 }
 .hire-box {
-  margin-left: 65%;
-  margin-bottom: 20px;
-  padding: 25px;
-  width: 400px;
+  margin: auto;
+  /* padding: 25px; */
+  width: 80%;
   text-align: center;
   border: 1px solid #f1f3f4;
   border-radius: 10px;
+  display: grid;
+  grid-template-columns: 60% 40%;
 }
 .hire-btn {
   height: 30px;
 }
-.icon-btn {
+/* .icon-btn {
   height: 100px;
   width: 100px;
+} */
+.hire-box-text {
+  padding: 25px;
 }
-.take-me-modal {
-  color: red;
+.tourGuide-image {
+  margin: 0px;
+  width: 100%;
+  max-height: 200px;
+}
+.hire-box-img {
+  padding: 0px;
+  margin: 0px;
 }
