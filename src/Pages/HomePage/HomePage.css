@@ -6,11 +6,16 @@
   width: 100%;
   background: #fff;
 }
-.hiddenGems h1 {
+.hiddenGems {
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
   margin: 32px 0 32px 12%;
   width: 75%;
+}
+.seemore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .gemCards {
   margin-bottom: 50px;

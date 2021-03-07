@@ -10,6 +10,7 @@ import { gems, TourGuideData } from '../../MockData/data';
 import cities from '../../MockData/cities.json';
 import { Carousel } from 'antd';
 import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   const settings = {
@@ -33,6 +34,9 @@ const HomePage = () => {
 
         <div className="hiddenGems" style={{ paddingTop: '30px' }}>
           <h1>Hidden Gems in North Lebanon</h1>
+          <Link to="/activities" className="seemore">
+            See More
+          </Link>
         </div>
 
         <div className="cityCarousel">
@@ -54,7 +58,7 @@ const HomePage = () => {
         <div className="cities" style={{ paddingTop: '30px' }}>
           <div className="cityHeader">
             <h1>Cities in North Lebanon</h1>
-            <a href="/cities">See more cities</a>
+            <Link to="/cities">See more cities</Link>
           </div>
           <div className="citysCard">
             {cities.map((city, index) => {
