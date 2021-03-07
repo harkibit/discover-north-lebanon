@@ -58,7 +58,12 @@ export default function ActivitiesItem(props) {
             <Col span={19} className="cityName">
               {cityName}
               <br />
-              <Rate disabled allowHalf defaultValue={rating} />
+              <Rate
+                disabled
+                allowHalf
+                defaultValue={rating}
+                className="rating-act-size"
+              />
             </Col>
             <Col span={5}>
               <Title level={3}>{price === 'FREE' ? price : price + '$'}</Title>
@@ -66,16 +71,16 @@ export default function ActivitiesItem(props) {
           </Row>
           <hr style={{ borderTop: 'lightgray' }} />
           <Row justify="space-between">
-            {tags.length < 4
+            {tags.length < 3
               ? tags.map((tag) => <span className="tagsFontColor">{tag}</span>)
               : tags
-                  .slice(0, 3)
+                  .slice(0, 2)
                   .map((tag) => <span className="tagsFontColor">{tag}</span>)}
-            {tags.length > 3 && (
+            {tags.length > 2 && (
               <Badge
                 overflowCount={10}
                 style={{ backgroundColor: '#108EE9' }}
-                count={tags.length - 3}
+                count={tags.length - 2}
               />
             )}
             <Link to={`/activities/${index}`}>

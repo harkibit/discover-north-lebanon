@@ -3,6 +3,9 @@
   width: 90%;
   border-radius: 10px;
 }
+.rating-act-size {
+  font-size: 14px;
+}
 .activity-card-image {
   border-radius: 10px;
 }
