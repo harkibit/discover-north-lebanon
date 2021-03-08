@@ -4,7 +4,6 @@ import './CitiesPage.css';
 import { Link } from 'react-router-dom';
 
 export default function CitiesPage({ data }) {
-  // console.log(data);
   return (
     <div className="cityPage">
       <div className="cityList">
