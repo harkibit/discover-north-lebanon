@@ -102,7 +102,7 @@ export default function SingleCityPage() {
                 </h3>
                 <Map
                   width="100"
-                  height="43ch"
+                  height="320px"
                   data={cities}
                   long={city.lng}
                   lat={city.lat}
