@@ -6,12 +6,14 @@ import CityCarousel from '../../Components/CityCarousel/CityCarousel';
 import cities from '../../MockData/cities.json';
 import { PageHeader } from 'antd';
 import tourGuide from './tourGuide.jpg';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useHistory } from 'react-router-dom';
 
 export default function SingleCityPage() {
   let { id } = useParams();
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [city, setCity] = useState();
+  const history = useHistory();
+
   useEffect(() => {
     cities.forEach((c) => {
       if (c.id === parseInt(id)) {
@@ -25,12 +27,11 @@ export default function SingleCityPage() {
   };
   return (
     <div className="single-city-page">
-      {console.log(city)}
       {city && (
         <div>
           <PageHeader
             className="site-page-header"
-            onBack={() => null}
+            onBack={() => history.push('/cities')}
             title={<span>Back</span>}
           />
           <h1 className="single-city-title">{city.name}</h1>
