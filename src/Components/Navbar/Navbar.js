@@ -55,15 +55,18 @@ export default function Navbar() {
 
         <Menu className="headerStyleCenter" mode="horizontal">
           <Menu.Item key="1">
-            <Link to="/activities">{t('navbar.activities')} </Link>
+            <Link to="/">{t('navbar.home')} </Link>
           </Menu.Item>
           <Menu.Item key="2">
-            <Link to="/cities">{t('navbar.cities')} </Link>
+            <Link to="/activities">{t('navbar.activities')} </Link>
           </Menu.Item>
           <Menu.Item key="3">
-            <Link to="/tour-guide">{t('navbar.tourGuide')} </Link>
+            <Link to="/cities">{t('navbar.cities')} </Link>
           </Menu.Item>
           <Menu.Item key="4">
+            <Link to="/tour-guide">{t('navbar.tourGuide')} </Link>
+          </Menu.Item>
+          <Menu.Item key="5">
             <Link to="/about-us">{t('navbar.about')} </Link>
           </Menu.Item>
         </Menu>
