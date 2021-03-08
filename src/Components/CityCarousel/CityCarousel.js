@@ -15,7 +15,7 @@ export default function CityCarousel({
   }
   function plusSlides(n) {
     picArray.forEach((pic, index) => {
-      if (pic == imgSrc) {
+      if (pic === imgSrc) {
         if (index + n >= picArray.length) {
           setImgSrc(picArray[0]);
         } else if (index + n < 0) {
