@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HeartOutlined, HeartFilled } from '@ant-design/icons';
+import { FavoriteBorder, Favorite } from '@material-ui/icons';
 import { Tooltip } from 'antd';
 import './Like.css';
 
@@ -9,18 +9,23 @@ export default function Like() {
     setLike(!like);
   };
   return (
-    <div>
+    <div className="like-icn-12">
       <Tooltip
         placement="top"
         title={like ? 'add to favorite' : 'remove from favorite'}
       >
         {like ? (
-          <HeartOutlined
-            className="heartOutlined heartSize"
+          <FavoriteBorder
+            style={{ fontSize: '40px' }}
+            className="heartOutlined"
             onClick={toggleLike}
           />
         ) : (
-          <HeartFilled className="heartFilled heartSize" onClick={toggleLike} />
+          <Favorite
+            style={{ fontSize: '40px' }}
+            className="heartFilled"
+            onClick={toggleLike}
+          />
         )}
       </Tooltip>
     </div>

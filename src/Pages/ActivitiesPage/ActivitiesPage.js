@@ -10,8 +10,7 @@ export const TooltipColor = React.createContext();
 export const ID = React.createContext();
 
 export default function ActivitiesPage() {
-  const [top, setTop] = useState(10);
-  const [container, setContainer] = useState(null);
+  const [top] = useState(10);
 
   const [hover, setHover] = useState(false);
   const [id, setId] = useState(null);

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Spin, Skeleton } from 'antd';
-import { LoadingOutlined, CloseOutlined } from '@ant-design/icons';
+import { LoadingOutlined } from '@ant-design/icons';
+import { Close } from '@material-ui/icons';
+
 import './ActivitiesCardList.css';
 import ActivityItem from '../ActivitiesItem/ActivitiesItem';
 
@@ -32,7 +34,7 @@ export default function ActivitiesCardList(props) {
         <span className="results-number">{reslength} results</span>
         <span className="only-outdoor" onClick={filterOutdoor}>
           Only outdoor activities
-          {show ? <CloseOutlined /> : ''}
+          {show ? <Close /> : ''}
         </span>
       </div>
 

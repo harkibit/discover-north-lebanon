@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
 import './activityItem.css';
-import { Card, Row, Col, Typography, Rate, Tooltip, Badge } from 'antd';
-import {
-  HeartOutlined,
-  HeartFilled,
-  DoubleRightOutlined,
-} from '@ant-design/icons';
+import { Card, Row, Col, Typography, Rate, Badge } from 'antd';
 import { Link } from 'react-router-dom';
 import Like from '../Like/Like';
+import { DoubleArrow } from '@material-ui/icons';
 
 const { Title } = Typography;
 export default function ActivitiesItem(props) {
@@ -55,7 +51,7 @@ export default function ActivitiesItem(props) {
             </Col>
           </Row>
           <Row className="middle-row-height">
-            <Col span={19} className="cityName">
+            <Col span={21} className="cityName">
               {cityName}
               <br />
               <Rate
@@ -65,7 +61,7 @@ export default function ActivitiesItem(props) {
                 className="rating-act-size"
               />
             </Col>
-            <Col span={5}>
+            <Col span={3}>
               <Title level={3}>{price === 'FREE' ? price : price + '$'}</Title>
             </Col>
           </Row>
@@ -85,7 +81,7 @@ export default function ActivitiesItem(props) {
             )}
             <Link to={`/activities/${index}`}>
               <span className="learnMore">
-                learn more <DoubleRightOutlined />
+                learn more <DoubleArrow className="double-ar-right" />
               </span>
             </Link>
           </Row>

@@ -30,7 +30,7 @@ function MarkerComponent(props) {
           {item.price === 'FREE' ? item.price : item.price + '$'}
         </span>
       ) : (
-        <img src={marker} className="cityMarker" />
+        <img src={marker} alt="markers" className="cityMarker" />
       )}
     </Marker>
   ));

@@ -17,8 +17,13 @@
 }
 .learnMore {
   color: gray;
+  display: flex;
 }
 .learnMore:hover {
   transition: 0.1s;
   color: #0091ea;
+}
+.double-ar-right {
+  font-size: small;
+  line-height: -10;
 }

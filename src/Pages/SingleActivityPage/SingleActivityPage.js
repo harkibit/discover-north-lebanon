@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './SingleActivityPage.css';
 import { Divider, PageHeader } from 'antd';
 import ActivitiesCarousel from '../../Components/ActivitiesCarousel/ActivitiesCarousel';
@@ -7,12 +7,10 @@ import tourguideimg from '../../Components/WhatWeDo/icons/tourGuide.png';
 import { useParams } from 'react-router';
 import activities from '../../MockData/activities.json';
 import Like from '../../Components/Like/Like';
+import { Link } from 'react-router-dom';
+
 export default function SingleActivityPage(props) {
   const { id } = useParams();
-  const [like, setLike] = useState(true);
-  const toggleLike = () => {
-    setLike(!like);
-  };
   return (
     <div className="single-act-container">
       <PageHeader
@@ -51,11 +49,13 @@ export default function SingleActivityPage(props) {
                       />
                       Need A Tour Guide?
                     </h1>
-                    <Button
-                      buttonWidth={10}
-                      text="See Available tour guides"
-                      type="primary"
-                    />
+                    <Link to="/tour-guide">
+                      <Button
+                        buttonWidth={10}
+                        text="See Available tour guides"
+                        type="primary"
+                      />
+                    </Link>
                   </div>
                 </div>
               </div>
