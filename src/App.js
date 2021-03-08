@@ -5,8 +5,8 @@ import FooterComponent from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
 import HomePage from './Pages/HomePage/HomePage';
 import AboutUsPage from './Pages/AboutUs/AboutUs';
-// import CitiesPage from './Pages/CitiesPage/CitiesPage';
-// import cities from './MockData/cities.json';
+import CitiesPage from './Pages/CitiesPage/CitiesPage';
+import cities from './MockData/cities.json';
 import ErrorPage from './Pages/ErrorPage/ErrorPage';
 import TourGuidePage from './Pages/TourGuide/TourGuidePage';
 
@@ -24,7 +24,7 @@ function App() {
               {/* Activities page */}
             </Route>
             <Route exact path="/cities">
-              {/* <CitiesPage data={cities} /> */}
+              <CitiesPage data={cities} />
             </Route>
             <Route exact path="/tour-guide">
               <TourGuidePage />
