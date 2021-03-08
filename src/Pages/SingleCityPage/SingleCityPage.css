@@ -1,5 +1,6 @@
 .single-city-title {
   margin: auto;
+  font-size: 32px;
   padding-bottom: 50px;
   margin-top: 0px;
   width: fit-content;
@@ -89,6 +90,7 @@
 .hire-box {
   margin: auto;
   /* padding: 25px; */
+  margin-bottom: 15px;
   width: 80%;
   text-align: center;
   border: 1px solid #f1f3f4;
