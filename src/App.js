@@ -5,6 +5,7 @@ import FooterComponent from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
 import HomePage from './Pages/HomePage/HomePage';
 import AboutUsPage from './Pages/AboutUs/AboutUs';
+import SingleCityPage from './Pages/SingleCityPage/SingleCityPage';
 import CitiesPage from './Pages/CitiesPage/CitiesPage';
 import cities from './MockData/cities.json';
 import ErrorPage from './Pages/ErrorPage/ErrorPage';
@@ -31,6 +32,9 @@ function App() {
             </Route>
             <Route exact path="/cities">
               <CitiesPage data={cities} />
+            </Route>
+            <Route exact path="/cities/:id">
+              <SingleCityPage />
             </Route>
             <Route exact path="/tour-guide">
               <TourGuidePage />
