@@ -51,7 +51,7 @@ export default function ActivitiesItem(props) {
             </Col>
           </Row>
           <Row className="middle-row-height">
-            <Col span={21} className="cityName">
+            <Col span={20} className="cityName">
               {cityName}
               <br />
               <Rate
@@ -61,8 +61,10 @@ export default function ActivitiesItem(props) {
                 className="rating-act-size"
               />
             </Col>
-            <Col span={3}>
-              <Title level={3}>{price === 'FREE' ? price : price + '$'}</Title>
+            <Col span={4}>
+              <Title style={{ textAlign: 'center' }} level={3}>
+                {price === 'FREE' ? price : price + '$'}
+              </Title>
             </Col>
           </Row>
           <hr style={{ borderTop: 'lightgray' }} />
