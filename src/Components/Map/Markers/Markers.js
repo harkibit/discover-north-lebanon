@@ -1,5 +1,5 @@
 import * as React from 'react';
-// import { useContext } from 'react';
+import { useContext } from 'react';
 import { Marker } from 'react-map-gl';
 import './Markers.css';
 import { TooltipColor, ID } from '../../../Pages/ActivitiesPage/ActivitiesPage';
