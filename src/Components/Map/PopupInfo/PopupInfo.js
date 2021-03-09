@@ -13,6 +13,7 @@ function PopUpInfo(props) {
         height={130}
         src={info.image}
         className="img-padding-popup"
+        alt="popup-img"
       />
       <div className="container-popup">
         <div className="popup-info-style">
