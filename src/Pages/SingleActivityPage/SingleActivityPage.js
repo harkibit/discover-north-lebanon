@@ -23,48 +23,50 @@ export default function SingleActivityPage(props) {
         .filter((act) => parseInt(id) === act.id)
         .map((act) => {
           return (
-            <div className="grid-view">
-              <div className="left-side-grid">
-                <div className="header">
-                  <div className="header-child-1">
-                    <h1>{act.name}</h1>
-                    <Like />
+            <div className="s-act-p-cont">
+              <div className="grid-view">
+                <div className="left-side-grid">
+                  <div className="single-act-info-header">
+                    <div className="single-act-info-header-child-1">
+                      <h1>{act.name}</h1>
+                      <Like />
+                    </div>
+                    <Divider />
+                    <div className="single-act-info-header-child-2">
+                      {act.related_tags &&
+                        act.related_tags.map((tag) => <span>{tag}</span>)}
+                    </div>
                   </div>
-                  <Divider />
-                  <div className="header-child-2">
-                    {act.related_tags &&
-                      act.related_tags.map((tag) => <span>{tag}</span>)}
+                  <div className="left-grid-description">{act.description}</div>
+
+                  <div className="single-act-left-grid-tour-guide">
+                    <div className="single-act-info-hire-box">
+                      <h1 className="single-act-info-icon-text">
+                        {' '}
+                        <img
+                          src={tourguideimg}
+                          className="single-act-info-icon-style"
+                          alt="icon"
+                        />
+                        Need A Tour Guide?
+                      </h1>
+                      <Link to="/tour-guide">
+                        <Button
+                          buttonWidth={10}
+                          text="See Available tour guides"
+                          type="primary"
+                        />
+                      </Link>
+                    </div>
                   </div>
                 </div>
-                <div className="left-grid-description">{act.description}</div>
 
-                <div className="left-grid-tour-guide">
-                  <div className="hire-box">
-                    <h1 className="icon-text">
-                      {' '}
-                      <img
-                        src={tourguideimg}
-                        className="iconStyle"
-                        alt="icon"
-                      />
-                      Need A Tour Guide?
-                    </h1>
-                    <Link to="/tour-guide">
-                      <Button
-                        buttonWidth={10}
-                        text="See Available tour guides"
-                        type="primary"
-                      />
-                    </Link>
-                  </div>
+                <div>
+                  <ActivitiesCarousel
+                    actPicArray={act.images}
+                    carWidth={'50rem'}
+                  />
                 </div>
-              </div>
-
-              <div>
-                <ActivitiesCarousel
-                  actPicArray={act.images}
-                  carWidth={'61rem'}
-                />
               </div>
             </div>
           );
