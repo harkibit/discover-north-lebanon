@@ -1,7 +1,6 @@
-import { Card } from 'antd';
+import { Card, Button } from 'antd';
 import './JoinOurTeam.css';
 import { Link } from 'react-router-dom';
-import ButtonComponont from '../../Button/Button';
 import EmailModal from '../../EmailModal/EmailModal';
 import { useState } from 'react';
 
@@ -36,15 +35,21 @@ const JoinOurTeam = ({ guide }) => {
           data-aos-duration="500"
         >
           <div className="info">
-            <h1 className="title">
+            <h1 className=" home-header-size title">
               {guide.name} our {guide.speciality_tags[0]}
             </h1>
-            <p className="description">{guide.summary}</p>
-            <ButtonComponont
+            <p className="description">
+              Our team consist of experienced tour guides, if you want to join
+              them don't hesitate!
+            </p>
+
+            <Button
               type="primary"
-              text="Join Our Team"
+              className="join-us-btn"
               onClick={handleClick}
-            />
+            >
+              Join Our Team
+            </Button>
             <EmailModal
               isModalVisible={isModalVisible}
               setIsModalVisible={setIsModalVisible}

@@ -23,6 +23,7 @@ export const responsive_data = [
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4RJiZWVAsA4YkYFlxCyft5uI_pfDnW-41zg&usqp=CAU',
     width: '95%',
     height: '250px',
+    id: 0,
   },
 ];
 
@@ -64,7 +65,7 @@ export const activities = [
   },
   {
     id: 264,
-    name: 'Skiing',
+    name: 'Biking',
     image:
       'https://img.freepik.com/free-photo/cedar-forest-mountains-lebanon_134785-1958.jpg?size=626&ext=jpg',
     width: '100%',
@@ -72,7 +73,7 @@ export const activities = [
   },
   {
     id: 222,
-    name: 'Mountain Biking',
+    name: 'Skiing',
     image:
       'https://img.redbull.com/images/c_crop,x_0,y_0,h_3840,w_4800/c_fill,w_650,h_520/q_auto,f_auto/redbullcom/2020/4/29/ereaaopn5xjdzt3nsgdr/kenny-belaey-discovers-the-lebanon-mountain-trail-from-border-to-border',
     width: '100%',

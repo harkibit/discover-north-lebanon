@@ -23,6 +23,7 @@ const HomePage = () => {
     nextArrow: <RightOutlined />,
     prevArrow: <LeftOutlined />,
   };
+
   const { t } = useTranslation();
   return (
     <div className="homePage">

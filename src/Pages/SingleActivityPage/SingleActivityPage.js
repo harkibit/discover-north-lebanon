@@ -44,8 +44,7 @@ export default function SingleActivityPage() {
 
                     <div className="single-act-left-grid-tour-guide">
                       <div className="single-act-info-hire-box">
-                        <h1 className="single-act-info-icon-text">
-                          {' '}
+                        <h1 className="single-act-info-icon-text home-header-size">
                           <img
                             src={tourguideimg}
                             className="single-act-info-icon-style"
@@ -63,7 +62,6 @@ export default function SingleActivityPage() {
                       </div>
                     </div>
                   </div>
-
                   <div>
                     <ActivitiesCarousel
                       actPicArray={act.images}
