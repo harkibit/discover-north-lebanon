@@ -3,8 +3,10 @@ import { SearchOutlined } from '@ant-design/icons';
 import { Select } from 'antd';
 import './Search.css';
 import { useTranslation } from 'react-i18next/';
+import { useHistory } from 'react-router-dom';
 
 export default function Search({ citiesArray, activitiesArray, handleSearch }) {
+  const history = useHistory();
   const { t } = useTranslation();
   const [citySearch, setCitySearch] = useState(undefined);
   const [activitySearch, setActivitySearch] = useState('');
@@ -12,29 +14,32 @@ export default function Search({ citiesArray, activitiesArray, handleSearch }) {
   const [activityVal, setActivityVal] = useState(`${t('homePage.searchAct')}`);
   const { Option } = Select;
   let id = 0;
+
   function handleChangeCity(value) {
     setCitySearch(value);
     setCityVal(value);
   }
+
   function handleChangeAct(value) {
     setActivitySearch(value);
     setActivityVal(value);
   }
+
   function onSearch(val) {
     citiesArray.forEach((city) => {
       if (val === city) setCitySearch(val);
     });
   }
+
   function handleSubmit(e) {
     e.preventDefault();
-    // handleSearch(citySearch, activitySearch);
     let c = activitiesArray.filter(
       (act) => act.city === citySearch && act.name === activitySearch
     );
     id = c.map((act) => act.id);
-    setTimeout(() => {
-      window.location = `/activities/${id[0]}`;
-    }, 300);
+
+    history.push(`/activities/${id[0]}`);
+
     setCitySearch(undefined);
     setActivitySearch('');
     setCityVal(`${t('homePage.searchCity')}`);

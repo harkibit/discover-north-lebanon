@@ -5,6 +5,9 @@ import './ActivitiesCarousel.css';
 
 export default function ActivitiesCarousel({ actPicArray, carWidth }) {
   const bodyStyles = document.body.style;
+  const style = {
+    objectFit: 'cover',
+  };
   bodyStyles.setProperty('--width', carWidth);
   return (
     <div className="carousel-act">
@@ -15,7 +18,7 @@ export default function ActivitiesCarousel({ actPicArray, carWidth }) {
       >
         {actPicArray.map((pic, index) => (
           <div className="carousel-item" key={index}>
-            <Image width="100%" height="70ch" src={pic} />
+            <Image style={style} width="100%" height="70ch" src={pic} />
           </div>
         ))}
       </Carousel>
