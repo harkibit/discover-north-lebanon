@@ -10,7 +10,7 @@ export default function ContactUs({
   name,
 }) {
   const [form] = Form.useForm();
-  const [selecteditem, setSelecteditem] = useState('');
+  const [setSelecteditem] = useState('');
   const [selectedDate, setSelectedDate] = useState('');
   function sendEmail() {
     emailjs

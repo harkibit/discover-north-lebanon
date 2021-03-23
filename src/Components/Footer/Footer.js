@@ -21,7 +21,7 @@ export default function FooterComponent() {
             </Link>
           </Title>
           <Text className="textColor">
-            COPYRIGHT © DISCOVER THE NORTH ALL RIGHTS RESERVED
+            COPYRIGHT © 2021 DISCOVER NORTH LEBANON
           </Text>
         </Footer>
       </Layout>
