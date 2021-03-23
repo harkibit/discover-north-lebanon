@@ -5,7 +5,7 @@ import './Navbar.css';
 import ButtonComponont from '../Button/Button';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import logo from './proj_logo.png';
+import logo from '../../assets/logo.png';
 
 const LANG_SPECS = [
   {
@@ -47,39 +47,43 @@ export default function Navbar() {
   const [top] = useState(0);
   return (
     <Affix offsetTop={top}>
-     <div>
-      <Layout id="navbar-header-style">
-        <div className="languages-toggle-lr">
-          <img className="logo" alt="discover the north Logo" src={logo}></img>
-        </div>
-        <Menu className="headerStyleCenter" mode="horizontal">
-          <Menu.Item key="1">
-            <Link to="/">{t('navbar.home')} </Link>
-          </Menu.Item>
-          <Menu.Item key="2">
-            <Link to="/activities">{t('navbar.activities')} </Link>
-          </Menu.Item>
-          <Menu.Item key="3">
-            <Link to="/cities">{t('navbar.cities')} </Link>
-          </Menu.Item>
-          <Menu.Item key="4">
-            <Link to="/tour-guide">{t('navbar.tourGuide')} </Link>
-          </Menu.Item>
-          <Menu.Item key="5">
-            <Link to="/about-us">{t('navbar.about')} </Link>
-          </Menu.Item>
-        </Menu>
-        <div className="languages-toggle-lr">
-          <Dropdown.Button
-            id="langButton"
-            overlay={menu}
-            placement="bottomCenter"
-            icon={<GlobalOutlined />}
-          />
-          <ButtonComponont text={t('navbar.signInButton')} type="primary" />
-        </div>
-      </Layout>
-    </div>
+      <div>
+        <Layout id="navbar-header-style">
+          <div className="languages-toggle-lr">
+            <img
+              className="logo"
+              alt="discover the north Logo"
+              src={logo}
+            ></img>
+          </div>
+          <Menu className="headerStyleCenter" mode="horizontal">
+            <Menu.Item key="1">
+              <Link to="/">{t('navbar.home')} </Link>
+            </Menu.Item>
+            <Menu.Item key="2">
+              <Link to="/activities">{t('navbar.activities')} </Link>
+            </Menu.Item>
+            <Menu.Item key="3">
+              <Link to="/cities">{t('navbar.cities')} </Link>
+            </Menu.Item>
+            <Menu.Item key="4">
+              <Link to="/tour-guide">{t('navbar.tourGuide')} </Link>
+            </Menu.Item>
+            <Menu.Item key="5">
+              <Link to="/about-us">{t('navbar.about')} </Link>
+            </Menu.Item>
+          </Menu>
+          <div className="languages-toggle-lr">
+            <Dropdown.Button
+              id="langButton"
+              overlay={menu}
+              placement="bottomCenter"
+              icon={<GlobalOutlined />}
+            />
+            <ButtonComponont text={t('navbar.signInButton')} type="primary" />
+          </div>
+        </Layout>
+      </div>
     </Affix>
   );
 }

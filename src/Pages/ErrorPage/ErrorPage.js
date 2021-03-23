@@ -1,6 +1,6 @@
 import React from 'react';
 import './ErrorPage.css';
-import error from './errorPic.png';
+import error from '../../assets/errorPic.png';
 import Button from '../../Components/Button/Button';
 import { Typography } from 'antd';
 import { Link } from 'react-router-dom';

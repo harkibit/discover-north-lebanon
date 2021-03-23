@@ -1,4 +1,4 @@
-import img from './a.png';
+import img from '../assets/guider.png';
 export const responsive_data = [
   {
     type: 'activity',

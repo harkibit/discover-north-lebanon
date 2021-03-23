@@ -1,8 +1,7 @@
-import support from './pagePictures/support.png';
-import pandemic from './pagePictures/pandemic.png';
-import country from './pagePictures/country.png';
-import bakhos from '../../Components/TeamCards/teamMembers/bakhos.png';
-
+import support from '../assets/about_support.png';
+import pandemic from '../assets/about_pandemic.png';
+import country from '../assets/about_country.png';
+import bakhos from '../assets/bakhos.png';
 export const section2 = {
   part1: {
     icon: country,

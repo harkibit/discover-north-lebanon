@@ -3,7 +3,7 @@ import './AboutUs.css';
 import WhyWeDidIt from '../../Components/WhyWeDidItSection/WhyWeDidItSection';
 import TeamCards from '../../Components/TeamCards/TeamCards';
 import FeedbackForm from '../../Components/FeedbackForm/FeedbackForm';
-import { section2, teamMembers } from './AboutUsData';
+import { section2, teamMembers } from '../../MockData/AboutUsData';
 import { useTranslation } from 'react-i18next';
 
 function AboutUs() {

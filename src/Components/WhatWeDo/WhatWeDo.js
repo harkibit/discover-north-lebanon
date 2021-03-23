@@ -1,8 +1,8 @@
 import React from 'react';
 import './WhatWeDo.css';
-import activity from './icons/activity.png';
-import cities from './icons/cities.png';
-import tourGuide from './icons/tourGuide.png';
+import activity from '../../assets/wwd_activity.png';
+import cities from '../../assets/wwd_cities.png';
+import tourGuide from '../../assets/wwd_tourGuide.png';
 import { useTranslation } from 'react-i18next/';
 
 export default function WhatWeDo(props) {

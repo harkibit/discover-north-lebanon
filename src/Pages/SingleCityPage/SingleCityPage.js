@@ -5,7 +5,7 @@ import { Card, Button } from 'antd';
 import CityCarousel from '../../Components/CityCarousel/CityCarousel';
 import cities from '../../MockData/cities.json';
 import { PageHeader } from 'antd';
-import tourGuide from './tourGuide.jpg';
+import tourGuide from '../../assets/cityTourGuide.jpg';
 import { useParams, Link, useHistory } from 'react-router-dom';
 
 export default function SingleCityPage() {

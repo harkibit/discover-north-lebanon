@@ -3,7 +3,7 @@ import './SingleActivityPage.css';
 import { Divider, PageHeader } from 'antd';
 import ActivitiesCarousel from '../../Components/ActivitiesCarousel/ActivitiesCarousel';
 import Button from '../../Components/Button/Button';
-import tourguideimg from '../../Components/WhatWeDo/icons/tourGuide.png';
+import tourguideimg from '../../assets/wwd_tourGuide.png';
 import { useParams } from 'react-router';
 import activities from '../../MockData/activities.json';
 import Like from '../../Components/Like/Like';
