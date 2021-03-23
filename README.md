@@ -4,7 +4,7 @@ Discover North Lebanon is a web application built with reactjs. It allows you to
 
 ## Demo
 
-To see the project go check [here](https://discover-north-lebanon.netlify.app/)
+To see the project go [here](https://discover-north-lebanon.netlify.app/)
 
 ## Installation
 
