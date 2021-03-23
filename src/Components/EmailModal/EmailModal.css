@@ -7,18 +7,19 @@
   color: white;
 }
 .ant-modal-header {
-  padding: 30px 10px 30px 10px;
-  background-image: url('modalHeader.jpg');
+  padding: 40px 10px 40px 10px;
+  background: #000428;
+  background: -webkit-linear-gradient(to right, #000428, #004e92, #0091ea);
+  background: linear-gradient(to right, #000428, #004e92, #0091ea);
 }
 .ant-modal-footer {
   padding: 15px 10px 10px 10px;
 }
 .input_name,
 .input_message,
-.input_email {
-  width: 250px;
-}
+.input_email,
 .input_city,
 .input_spec {
-  width: 150px;
+  width: 310px;
+  margin-left: 20px;
 }

@@ -32,17 +32,6 @@
 .form-div {
   height: 100%;
 }
-/* .site-config-provider-calendar-wrapper {
-  border: solid 1px whitesmoke;
-  width: 100%;
-}
-.ant-picker-calendar .ant-picker-calendar-mini {
-  margin: auto;
-}
-.ant-form-item .ant-select,
-.ant-form-item .ant-cascader-picker {
-  width: 0px;
-} */
 .email-name-mess-c {
   display: flex;
   flex-direction: column;
@@ -80,7 +69,7 @@
   border-radius: 10px;
 }
 .btn-submit-send {
-  margin: 50px 0 0 230px;
+  margin: 50px 0 0 330px;
 }
 
 @media only screen and (max-width: 1020px) {

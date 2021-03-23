@@ -6,7 +6,7 @@
     "description": "Tripoli is the largest city in northern Lebanon and the second-largest city in the country. Situated 85 kilometers (53 miles) north of the capital Beirut, it is the capital of the North Governorate and the Tripoli District. It overlooks the eastern Mediterranean Sea, and it is the northernmost seaport in Lebanon. It holds a string of four small islands offshore, and they are the only islands in Lebanon. The Palm Islands were declared a protected area because of their status of haven for endangered loggerhead turtles, rare monk seals and migratory birds.",
     "lat": 34.46664758010337,
     "lng": 35.831724876807975,
-    "address_coordinates": [34.46664758010337, 35.831724876807975],
+    "address_coordinates": [34.4539999996877321, 35.81723682052219],
     "country": "Lebanon",
     "iso2": "LB",
     "admin_name": "Liban-Nord",
@@ -16,11 +16,11 @@
     "width": "23%",
     "height": "270px",
     "images": [
-      "https://lh3.googleusercontent.com/vgmglfwOcHl_rX4fcic4lT84IMsqA9-0OWaISQm2g_AnyMGF_2QMDfYAYdcHByRiIwh_UjfjcQ9PLKri=w960-h960-n-o-v1",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Citadel_of_Raymond_de_Saint-Gilles_2009.jpg/800px-Citadel_of_Raymond_de_Saint-Gilles_2009.jpg",
-      "https://instagram.fbey1-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/91025690_1229233993946424_490515378471995724_n.jpg?tp=1&_nc_ht=instagram.fbey1-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=U7p6g7hRvLsAX9FuVoa&oh=25c97bcf8f11b108c757099842622fd5&oe=606E38B3",
-      "https://lh3.googleusercontent.com/UVEuiioxQBNJIbVjW6Uch7q5MC9oLcFALUB_cXQTw04dbYacpJ3NnHVOCtuHfqIvA9h_bvEQ6beQc-4a=w960-h960-n-o-v1",
-      "https://lh3.googleusercontent.com/hNHEn4cjpRo5V79Ss2X5yqvfpgFl7g5is6yVBz96dX3d8ehklt-PeQN4HgM4xIc6-6owREvsbNXu-F49=w960-h960-n-o-v1"
+      "https://i.pinimg.com/originals/21/f7/35/21f735ea9e9cbd0780258e855c9416cb.jpg",
+      "http://lebanonuntravelled.com/wp/wp-content/uploads/2015/09/mosque-2.jpg",
+      "https://i0.wp.com/www.myunusualjourneys.com/wp-content/uploads/2017/05/20170420_165841.jpg?resize=1024%2C576",
+      "https://i1.wp.com/blogbaladi.com/wp-content/uploads/2015/08/stairs.jpg",
+      "https://lebanonuntravelled.com/wp/wp-content/uploads/2018/12/20181207_024050.jpg"
     ],
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeUB6kWjsLzQzBDpUgBswD8jvLlffLX8S_pQ&usqp=CAU",
     "activityNumber": 7
@@ -150,11 +150,11 @@
     "width": "23%",
     "height": "270px",
     "images": [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRMGCBZQ7TWcjq7mjUx_4epsMj6vlbOveNqFlECUG25PC2jrxsCa9aEcbhSPthxiX1SkU&usqp=CAU",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8oL83o2GAxoD3bNdjlFq3cPc6_X6rgpzAZA&usqp=CAU",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0jz6RIcsp7yVdQ4EjTe0uaHPrbCIeF5OE7w&usqp=CAU",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHy-e0HNuYH0e1_HexmQc0_e-9byaA0ND_mA&usqp=CAU",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbXhWv486x6G14KMGstJtAYGy8Kq92fNLxEuWRz0lW_B_7FXykt1LAyrk7N0icl4JtLog&usqp=CAU"
+      "https://static2.touristtube.com/media/videos/uploads/2013/49/Batroun-Lebanon-1418053859502.jpg?d=1000x0",
+      "https://media-cdn.tripadvisor.com/media/photo-s/18/c0/91/c9/when-a-small-event-are.jpg",
+      "https://libanonweine.de/wp-content/uploads/2015/10/ixsir-winery.jpg",
+      "https://static2.touristtube.com/media/videos/uploads/2013/49/Batroun-Lebanon-1418053859967.jpg?d=1000x0",
+      "https://i.pinimg.com/originals/b9/73/c3/b973c3c90cb0d6a7be2df154a14d1a15.jpg"
     ],
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTakjCcJRf7oWgW6jxP2tHFB4CaeeceB1Iknw&usqp=CAU",
     "activityNumber": 8

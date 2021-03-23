@@ -82,7 +82,7 @@ export default function ActivitiesItem(props) {
             {tags.length > 2 && (
               <Badge
                 overflowCount={10}
-                style={{ backgroundColor: '#108EE9' }}
+                style={{ backgroundColor: '#108EE9', color: 'white' }}
                 count={tags.length - 2}
               />
             )}
