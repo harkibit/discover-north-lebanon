@@ -7,13 +7,12 @@ import { useTranslation } from 'react-i18next/';
 
 const { Title } = Typography;
 
-function FeedbackFormComponent({
-  user_name,
-  DTN_email = 'gtour180@gmail.com',
-}) {
+function FeedbackFormComponent({ DTN_email = 'gtour180@gmail.com' }) {
   const [form] = Form.useForm();
 
   function sendEmail(e) {
+    console.log('hi');
+
     emailjs
       .sendForm(
         'service_qmp8xcc',
@@ -38,17 +37,21 @@ function FeedbackFormComponent({
   const { t } = useTranslation();
   return (
     <div className="feedback-cp-s">
-      <Form form={form} onFinish={handleSubmit}>
+      <Form form={form} onFinish={handleSubmit} className="feedbackForm">
         <div className="feedback-cp-form-ct">
           <div className="feedback-form-col-1">
-            <Title level={2}>{t('aboutUsPage.footerTitle')}</Title>
-            <Title level={5}>{t('aboutUsPage.footerDesc')}</Title>
+            <Title level={2}>
+              <span className="color">{t('aboutUsPage.footerTitle')}</span>
+            </Title>
+            <Title level={5}>
+              <span className="color">{t('aboutUsPage.footerDesc')}</span>
+            </Title>
           </div>
 
           <hr className="hr-vertical" />
 
           <div className="feedback-form-col-2">
-            <Input type="hidden" name="user_name" value={user_name} />
+            <Input type="hidden" name="user_name" value="name" />
             <Input type="hidden" name="DTN_email" value={DTN_email} />
             <Form.Item
               name="user_email"

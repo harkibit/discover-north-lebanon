@@ -10,6 +10,15 @@ export default function CityCarousel({
 }) {
   const [imgSrc, setImgSrc] = useState(picArray[0]);
 
+  const body_style = {
+    height: '600px',
+    width: '848px',
+    backgroundColor: 'rgb(0,0,0,0.5)',
+    borderRadius: '5px',
+  };
+  const mask_style = {
+    backgroundColor: 'rgb(0,0,0,0.5)',
+  };
   function currentSlide(n) {
     setImgSrc(picArray[n]);
   }
@@ -33,11 +42,13 @@ export default function CityCarousel({
         visible={isModalVisible}
         footer={null}
         width={848}
-        height={700}
+        height={625}
         onCancel={() => setIsModalVisible(false)}
         closeIcon={
           <CloseOutlined style={{ color: 'white' }} className="close-icon" />
         }
+        bodyStyle={body_style}
+        maskStyle={mask_style}
       >
         <div className="city-car-container">
           <div className="big-pic-row">

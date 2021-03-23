@@ -66,8 +66,7 @@ export const teamMembers = [
     },
   },
   {
-    image:
-      'https://files.slack.com/files-pri/T01CVM0D97Z-F01QRSRDYKF/img_20210204_123540.jpg',
+    image: 'https://i.ibb.co/cwFdZkG/img-20210204-123540.jpg',
     name: 'Maryam AbdelKarim',
     specialization: 'Front-End Web Developer',
     url: {
@@ -77,8 +76,7 @@ export const teamMembers = [
     },
   },
   {
-    image:
-      'https://files.slack.com/files-pri/T01CVM0D97Z-F01Q8AJ6N9L/img_20210307_145945.jpg',
+    image: 'https://i.ibb.co/XpyvTvh/img-20210307-145945.jpg',
     name: 'Charbel Tarrazi',
     specialization: 'Front-End Web Developer',
     url: {

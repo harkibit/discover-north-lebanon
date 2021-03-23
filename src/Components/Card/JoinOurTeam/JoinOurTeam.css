@@ -17,13 +17,14 @@
 }
 .info {
   margin-top: 0;
-  margin-left: 80px;
+  margin-left: 60px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   grid-area: info;
+  width: 90%;
 }
 .title {
   text-align: left;
@@ -36,6 +37,12 @@
 .cardfooter {
   margin-top: 16px;
   font-size: 18px;
+}
+.join-us-btn {
+  border-radius: 10px;
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
 }
 
 @media (max-width: 600px) {
@@ -59,9 +66,9 @@
   }
   .description {
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
   }
   .cardfooter {
-    font-size: 14px;
+    font-size: 12px;
   }
 }

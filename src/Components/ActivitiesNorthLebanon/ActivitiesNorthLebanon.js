@@ -8,9 +8,11 @@ const ActivitiesNorthLebanon = () => {
   const { t } = useTranslation();
   return (
     <div className="containers">
-      <div className="headers">
-        <h1>{t('homePage.activity')}</h1>
-        <Link to="activities">{t('homePage.seeMoreAct')}</Link>
+      <div className="act-north-leb-headers">
+        <h1 className="home-header-size">{t('homePage.activity')}</h1>
+        <Link to="activities">
+          <span className="seemore">{t('homePage.seeMoreAct')}</span>
+        </Link>
       </div>
       <div className="grid">
         {activities.map((activity, index) => (

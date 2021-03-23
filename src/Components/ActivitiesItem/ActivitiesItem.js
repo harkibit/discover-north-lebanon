@@ -44,7 +44,9 @@ export default function ActivitiesItem(props) {
         <Col span={15}>
           <Row>
             <Col span={21}>
-              <Title level={3}>{name}</Title>
+              <Title style={{ color: '#021b77' }} level={3}>
+                {name}
+              </Title>
             </Col>
             <Col span={3}>
               <Like />
@@ -62,7 +64,10 @@ export default function ActivitiesItem(props) {
               />
             </Col>
             <Col span={4}>
-              <Title style={{ textAlign: 'center' }} level={3}>
+              <Title
+                style={{ textAlign: 'center', color: '#021b77' }}
+                level={3}
+              >
                 {price === 'FREE' ? price : price + '$'}
               </Title>
             </Col>
@@ -77,7 +82,7 @@ export default function ActivitiesItem(props) {
             {tags.length > 2 && (
               <Badge
                 overflowCount={10}
-                style={{ backgroundColor: '#108EE9' }}
+                style={{ backgroundColor: '#108EE9', color: 'white' }}
                 count={tags.length - 2}
               />
             )}

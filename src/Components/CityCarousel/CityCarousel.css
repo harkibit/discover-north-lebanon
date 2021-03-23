@@ -1,3 +1,6 @@
+.cities-carousel {
+  background-color: blue;
+}
 .city-car-container {
   position: relative;
 }
@@ -35,13 +38,14 @@
   clear: both;
 }
 .row {
-  margin: auto;
   height: 20%;
   display: flex;
-  width: 800px;
+  width: 870px;
+  margin: 60px 0 -20px -23px;
 }
 .demo {
   opacity: 0.8;
+  object-fit: cover;
 }
 .demo:hover {
   opacity: 1;
@@ -49,7 +53,8 @@
 .big-pic-row {
   margin: auto;
   height: 400px;
-  width: 800px;
+  width: 850px;
+  margin-left: -24px;
 }
 .column {
   width: 20%;
@@ -57,15 +62,17 @@
 }
 
 .small-pic {
-  padding-top: 3px;
-  padding-bottom: 3px;
-  max-width: 125px;
+  padding: 20px 0 -20px 0;
+  max-width: 150px;
   min-height: 125px;
+  border-radius: 5px;
 }
 .city-car-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
+  width: 99.9%;
+  height: 110%;
+  margin-top: -25px;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 1000px) {
