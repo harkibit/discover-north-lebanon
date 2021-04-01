@@ -22,6 +22,7 @@ Clone the Github repository and use npm to install the dependencies
 git clone https://github.com/harkibit/discover-north-lebanon.git
 cd discover_the_north_web
 npm i
+npm start
 ```
 
 ## MIT License
