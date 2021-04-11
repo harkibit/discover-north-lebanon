@@ -1,39 +1,40 @@
 # Discover North Lebanon
 
-Discover North Lebanon is a web application built with reactjs. It allows you to explore different cities and activities that can be done in north Lebanon.
+Discover North Lebanon is a web based application. It allows you to explore different cities and activities that can be done in north Lebanon.
 
-## Demo
+## Features 
+- Search for an activity in a specific city 
+- Have detailed information about a city and an activity
+- Find the location of an activity on the map 
+- Filter activities by type, city and price or by only outdoor 
+- Email a tour guide to hire him 
+- Supports 2 languages Arabic and English
 
-To see the project go [here](https://discover-north-lebanon.netlify.app/)
+## Demo 🌐
 
-## Installation
+To see the project go [here](discover-north-lebanon-b58aa.web.app)
 
+## Built With 🔨
+- [ReactJS](https://reactjs.org/) - The web framework used
+- [Antd](https://ant.design/) - Css framework for design and styling
+- [EmailJS](https://www.emailjs.com/) - To send or recieve emails
+- [Mapbox](https://www.mapbox.com/) - To implement the map functionality 
+- [I18next](https://react.i18next.com/) - For the translation 
+- [Firebase](https://firebase.google.com/) - For hosting 
+
+## Installation 📕
+ 
 Clone the Github repository and use npm to install the dependencies
 
 ```
 git clone https://github.com/harkibit/discover-north-lebanon.git
 cd discover_the_north_web
 npm i
+npm start
 ```
+
+After installing the dependencies you need to create a free account with [Mapbox](https://www.mapbox.com/) to get your API access token and place it in Map.js file (ReactMapGL component)
 
 ## MIT License
 
 COPYRIGHT © 2021 DISCOVER NORTH LEBANON
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
