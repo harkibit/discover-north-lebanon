@@ -12,7 +12,7 @@ Discover North Lebanon is a web based application. It allows you to explore diff
 
 ## Demo 🌐
 
-To see the project go [here](https://discover-north-lebanon.netlify.app/)
+To see the project go [here](discover-north-lebanon-b58aa.web.app)
 
 ## Built With 🔨
 - [ReactJS](https://reactjs.org/) - The web framework used
