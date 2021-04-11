@@ -8,7 +8,7 @@ Discover North Lebanon is a web based application. It allows you to explore diff
 - Find the location of an activity on the map 
 - Filter activities by type, city and price or by only outdoor 
 - Email a tour guide to hire him 
-- Supported by 2 languages Arabic and English
+- Supports 2 languages Arabic and English
 
 ## Demo 🌐
 
