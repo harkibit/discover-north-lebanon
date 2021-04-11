@@ -20,6 +20,8 @@ To see the project go [here](discover-north-lebanon-b58aa.web.app)
 - [EmailJS](https://www.emailjs.com/) - To send or recieve emails
 - [Mapbox](https://www.mapbox.com/) - To implement the map functionality 
 - [I18next](https://react.i18next.com/) - For the translation 
+- [Firebase](https://firebase.google.com/) - For hosting 
+
 ## Installation 📕
  
 Clone the Github repository and use npm to install the dependencies
