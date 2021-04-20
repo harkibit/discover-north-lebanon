@@ -1,5 +1,18 @@
-# Discover North Lebanon
+<p align = "center">
+ <img src = "public/proj_logo.png"/> 
+</p>
+<h1 align = "center"> 
+ Discover North Lebanon
+</h1>
+<p align = "center">
+  <img src ="https://img.shields.io/badge/reactjs-v17.0.2-blue"/>
+  <img src ="https://img.shields.io/badge/antd-v4.12.3-orange"/>
+  <img src ="https://img.shields.io/badge/build-passing-brightgreen"/>
+  <img src ="https://img.shields.io/badge/license-MIT-blue"/>
+</p>
 
+
+## Overview 
 Discover North Lebanon is a web based application. It allows you to explore different cities and activities that can be done in north Lebanon.
 
 ## Features 
@@ -35,6 +48,3 @@ npm start
 
 After installing the dependencies you need to create a free account with [Mapbox](https://www.mapbox.com/) to get your API access token and place it in Map.js file (ReactMapGL component)
 
-## MIT License
-
-COPYRIGHT © 2021 DISCOVER NORTH LEBANON
