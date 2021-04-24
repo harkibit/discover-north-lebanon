@@ -10,6 +10,8 @@
   color: #001c84;
   display: flex;
   flex-direction: row;
+  background: white;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .headerStyleCenter {
@@ -26,11 +28,50 @@
   align-items: center;
   justify-content: center;
   background: white;
-  border-bottom: 1px solid #f0f0f0;
+  /* border-bottom: 1px solid #f0f0f0; */
   width: 15%;
   color: #001c84;
 }
-
+.left-part {
+  display: flex;
+  justify-content: flex-end;
+}
 #langButton {
   margin: 0 15px;
+}
+.barsMenu {
+  display: none;
+}
+.middle-nav {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+@media (max-width: 770px) {
+  .barsMenu {
+    display: block;
+    margin-top: 9px;
+  }
+  .headerStyleCenter {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .middle-nav {
+    display: none;
+  }
+  #navbar-header-style {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+  }
+  .sign-in-btn {
+    display: none;
+  }
+  .left-part {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
