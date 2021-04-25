@@ -34,7 +34,7 @@
 }
 .left-part {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 #langButton {
   margin: 0 15px;
