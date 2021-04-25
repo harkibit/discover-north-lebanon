@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './tourGuideCard.css';
-import { Card, Row, Col, Tooltip, Tag, Skeleton } from 'antd';
+import { Card, Tooltip, Tag, Skeleton } from 'antd';
 import { EllipsisOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 import TourGuideModal from '../TourGuideModal/TourGuideModal';
@@ -12,30 +12,27 @@ function TourGuideCard(tourGuide) {
   const imgstyle = {
     borderRadius: '10px',
   };
+
   return (
-    <Card
-      className="tour-guide-card"
-      cover={
-        <img
-          className="imgProp"
-          style={imgstyle}
-          src={tourGuide.imgsrc}
-          alt="Guider"
-        />
-      }
-    >
-      <Row className="rowheight">
-        <Col span={20}>
-          <Row>
-            <h1>{tourGuide.name}</h1>
-          </Row>
+    <Card className="guide-card" bodyStyle={{ padding: '0' }}>
+      <div className="tour-guide-card1">
+        <div className="guide-pic">
+          <img
+            className="imgProp"
+            style={imgstyle}
+            src={tourGuide.imgsrc}
+            alt="Guider"
+          />
+        </div>
+        <div className="info-section">
+          <h1>{tourGuide.name}</h1>
           <div>
             Speciality : &nbsp;
             {tourGuide.tags &&
               tourGuide.tags.map((tag) => <Tag color="blue">{tag}</Tag>)}
           </div>
 
-          <Row justify="center" className="description">
+          <div justify="center" className="description">
             {!tourGuide.description ? (
               <div className="skeleton-container">
                 <Skeleton.Input active size="small" className="skeleton" />
@@ -53,10 +50,10 @@ function TourGuideCard(tourGuide) {
                 &nbsp;<span className="tour-see-more"> See more ..</span>
               </span>
             )}
-          </Row>
-        </Col>
-        <Col span={4} className="col-align">
-          <Row justify="end">
+          </div>
+        </div>
+        <div className="buttons-section">
+          <div>
             <Tooltip
               placement="top"
               title="See more"
@@ -73,8 +70,8 @@ function TourGuideCard(tourGuide) {
                 handleCancel={handleCancel}
               />
             </Tooltip>
-          </Row>
-          <Row justify="end">
+          </div>
+          <div>
             <Link to={`/hire-me/${tourGuide.name}`}>
               <button
                 className="hire-me-card-btn"
@@ -84,9 +81,9 @@ function TourGuideCard(tourGuide) {
                 Hire me
               </button>
             </Link>
-          </Row>
-        </Col>
-      </Row>
+          </div>
+        </div>
+      </div>
     </Card>
   );
 }
